@@ -1,0 +1,1506 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: MoreValidations.spec.js >> Visual comparison
+- Location: tests/MoreValidations.spec.js:40:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.rediff.com/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "logo" [ref=e6] [cursor=pointer]:
+      - /url: https://www.rediff.com
+      - img "logo" [ref=e7]
+    - generic [ref=e8]:
+      - link "Rediffmail" [ref=e9] [cursor=pointer]:
+        - /url: https://mail.rediff.com/cgi-bin/login.cgi
+      - link "Money" [ref=e10] [cursor=pointer]:
+        - /url: https://money.rediff.com/index.html
+      - link "Enterprise Email" [ref=e11] [cursor=pointer]:
+        - /url: https://workmail.rediff.com/?sc_cid=ushome
+      - link "Business Email" [ref=e12] [cursor=pointer]:
+        - /url: https://businessemail.rediff.com/?sc_cid=ushome
+      - link "rediffGURUS" [ref=e13] [cursor=pointer]:
+        - /url: https://gurus.rediff.com/
+      - link "rediff-TV New" [ref=e14] [cursor=pointer]:
+        - /url: https://tv.rediff.com?utm_source=rediff_home_us_icon&utm_medium=pc&utm_campaign=redifftv&utm_content=redifftv_rediff_home_us_icon_pc
+    - generic [ref=e15]:
+      - paragraph
+      - paragraph [ref=e16]:
+        - link "Sign in" [ref=e17] [cursor=pointer]:
+          - /url: https://mail.rediff.com/cgi-bin/login.cgi
+        - link "Create Account" [ref=e18] [cursor=pointer]:
+          - /url: https://register.rediff.com/register/register.php?FormName=user_details
+  - generic [ref=e19]:
+    - link "IPL 2026" [ref=e20] [cursor=pointer]:
+      - /url: https://www.rediff.com/cricket/ipl-t20-2026/
+      - text: IPL 2026
+    - text: "|"
+    - link "Fixtures & Results" [ref=e22] [cursor=pointer]:
+      - /url: https://www.rediff.com/cricket/ipl-t20-2026/fixtures-results/
+    - text: "|"
+    - link "Points Table" [ref=e23] [cursor=pointer]:
+      - /url: https://www.rediff.com/cricket/ipl-t20-2026/points-table/
+    - text: "|"
+    - link "Teams" [ref=e24] [cursor=pointer]:
+      - /url: https://www.rediff.com/cricket/ipl-t20-2026/teams/
+  - generic [ref=e25]:
+    - generic [ref=e26]: Advertisement
+    - iframe [ref=e30]:
+      - generic [ref=f6e1]:
+        - link [ref=f6e2] [cursor=pointer]:
+          - /url: https://pagead2.googlesyndication.com/pcs/click?xai=AKAOjsv5CAW9LzLGR2NttvQxyVTiKvPdLMLLmr_WNk1itZgERC4QnufhXx_SE6tOvceX7kzQaEOLrADa0JJ9TasSeNPMujfc6S509rsmnTH1TNVOFJeHaxCWYzeuMknEWYDKbAZodJKB5gzSNs1IDIu0SoBZMQkyud8KjaB93ESn2FczGVdsROXkWjHi4_G2pAvYL_qRBUl36F5gS1hSqXFm2y4jTmo3UpeAEHM0DhTxTKx0p2yJ1De0UZ78ZWXo1c5iI7h8QPasS5u8uNfcrh62JsxfPasdKV2XlKMji2_gQchAJnG-VldjhaU0UZheAoWrXlnekhg9vjOgYlZf0NoikA6voG5Wpmnl15oQE6I-fCnb67BJbxuWc2TLo67svsY429BdLVIuLh4i8xU6aEZtLnLm-lGLe2-sQMHN&sig=Cg0ArKJSzPjl8Z4m85rX&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://tv.rediff.com%3Futm_source%3Dredifftv%26utm_medium%3Dbanner_300x250_INTL%26utm_campaign%3Dredifftv_launch%26utm_content%3Dredifftv_launch_banner_300x250_INTL
+        - img [ref=f6e6] [cursor=pointer]
+        - button [ref=f6e9] [cursor=pointer]:
+          - img [ref=f6e10]
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - text: HOME
+      - link "REDIFF-TV New" [ref=e34] [cursor=pointer]:
+        - /url: https://tv.rediff.com
+      - link "NEWS" [ref=e36] [cursor=pointer]:
+        - /url: https://www.rediff.com/news
+      - link "BUSINESS" [ref=e38] [cursor=pointer]:
+        - /url: https://www.rediff.com/business
+      - link "MOVIES" [ref=e40] [cursor=pointer]:
+        - /url: https://www.rediff.com/movies
+      - link "IPL 2026" [ref=e42] [cursor=pointer]:
+        - /url: https://www.rediff.com/cricket/ipl-2026
+      - link "SPORTS" [ref=e44] [cursor=pointer]:
+        - /url: https://www.rediff.com/sports
+      - link "GET AHEAD" [ref=e46] [cursor=pointer]:
+        - /url: https://www.rediff.com/getahead
+      - link "AI-WEBSITE BUILDER New" [ref=e48] [cursor=pointer]:
+        - /url: https://apps.rediff.com
+    - generic [ref=e49]:
+      - text: "Follow Rediff on:"
+      - link [ref=e50] [cursor=pointer]:
+        - /url: https://x.com/RediffNews
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://www.instagram.com/rediffnews/
+      - link [ref=e54] [cursor=pointer]:
+        - /url: https://www.facebook.com/people/Rediff-News/61566156876578/
+      - link [ref=e56] [cursor=pointer]:
+        - /url: https://whatsapp.com/channel/0029Va5OV1pLtOjB8oWyne1F
+  - heading "TOP STORIES" [level=1] [ref=e59]
+  - generic [ref=e60]:
+    - generic [ref=e61]:
+      - link "'Love Scenes Are Like Action Or Dance'" [ref=e63] [cursor=pointer]:
+        - /url: https://www.rediff.com/movies/report/kritika-kamra-on-matka-king-gulrukh-and-challenging-industry-norms/20260421.htm
+        - img "'Love Scenes Are Like Action Or Dance'" [ref=e64]
+      - heading "'Love Scenes Are Like Action Or Dance'" [level=2] [ref=e67]:
+        - link "'Love Scenes Are Like Action Or Dance'" [ref=e68] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/kritika-kamra-on-matka-king-gulrukh-and-challenging-industry-norms/20260421.htm
+      - generic [ref=e69]:
+        - paragraph [ref=e70]: 9 min read
+        - paragraph [ref=e71]: 9 hours ago
+      - generic [ref=e73]:
+        - link:
+          - /url: https://tv.rediff.com/hourly/16-21-hourly_news.mp4_video/1621042026
+          - img [ref=e75] [cursor=pointer]
+        - generic [ref=e76]:
+          - paragraph [ref=e77]:
+            - link "Rediff-TV" [ref=e78] [cursor=pointer]:
+              - /url: https://tv.rediff.com
+          - link "5 pm News Flash – April 21, 2026" [ref=e79] [cursor=pointer]:
+            - /url: https://tv.rediff.com/hourly/16-21-hourly_news.mp4_video/1621042026
+    - generic [ref=e80]:
+      - paragraph [ref=e81]: Apr 21, 2026 IST 18:07:52
+      - heading "LIVE! US, Iran signal they will go to Pak for ceasefire talks" [level=2] [ref=e82]:
+        - link "LIVE! US, Iran signal they will go to Pak for ceasefire talks" [ref=e83] [cursor=pointer]:
+          - /url: https://m.rediff.com/news/commentary/2026/apr/21/liveupdates.htm
+        - paragraph [ref=e84]
+      - heading "Did seized Iranian ship carry China-linked missile chemicals? 4 min read" [level=2] [ref=e85]:
+        - link "Did seized Iranian ship carry China-linked missile chemicals?" [ref=e86] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/report/did-seized-iranian-ship-carry-china-linked-missile-chemicals/20260421.htm
+        - paragraph [ref=e87]: 4 min read
+      - 'heading "No Iranian delegation has left for Pakistan yet: Report 3 min read" [level=2] [ref=e88]':
+        - 'link "No Iranian delegation has left for Pakistan yet: Report" [ref=e89] [cursor=pointer]':
+          - /url: https://www.rediff.com/news/report/no-iranian-delegation-has-left-for-pakistan-yet-report/20260421.htm
+        - paragraph [ref=e90]: 3 min read
+      - heading "Cong moves privilege notice against PM over address to nation 3 min read" [level=2] [ref=e91]:
+        - link "Cong moves privilege notice against PM over address to nation" [ref=e92] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/report/cong-moves-privilege-notice-against-pm-over-address-to-nation/20260421.htm
+        - paragraph [ref=e93]: 3 min read
+      - heading "Iran Ceasefire Hours From Collapse 14 min read" [level=2] [ref=e94]:
+        - link "Iran Ceasefire Hours From Collapse" [ref=e95] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/special/iran-ceasefire-hours-from-collapse/20260421.htm
+        - paragraph [ref=e96]: 14 min read
+      - heading "Pak gets 2nd tranche of $1bn loan from Saudi Arabia 3 min read" [level=2] [ref=e97]:
+        - link "Pak gets 2nd tranche of $1bn loan from Saudi Arabia" [ref=e98] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/report/pak-gets-2nd-tranche-of-1bn-loan-from-saudi-arabia/20260421.htm
+        - paragraph [ref=e99]: 3 min read
+      - heading "SRH Look to Extend Home Momentum Against Inconsistent DC 4 min read" [level=2] [ref=e100]:
+        - link "SRH Look to Extend Home Momentum Against Inconsistent DC" [ref=e101] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-preview-srh-look-to-extend-home-momentum-against-inconsistent-dc/20260420.htm
+        - paragraph [ref=e102]: 4 min read
+      - heading "Big blow for CSK as Mhatre ruled out of IPL with injury 1 min read" [level=2] [ref=e103]:
+        - link "Big blow for CSK as Mhatre ruled out of IPL with injury" [ref=e104] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket/report/big-blow-for-csk-as-mhatre-ruled-out-of-ipl-2026-with-injury/20260421.htm
+        - paragraph [ref=e105]: 1 min read
+      - heading "TCS Makes 25,000 Fresher Offers 3 min read" [level=2] [ref=e106]:
+        - link "TCS Makes 25,000 Fresher Offers" [ref=e107] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/tcs-makes-25000-fresher-offers/20260421.htm
+        - paragraph [ref=e108]: 3 min read
+      - paragraph [ref=e109]:
+        - link "See More >" [ref=e110] [cursor=pointer]:
+          - /url: https://www.rediff.com/news
+    - generic [ref=e111]:
+      - generic [ref=e113]: Advertisement
+      - generic [ref=e117]:
+        - iframe [ref=e118]:
+          - generic [active] [ref=f1e1]:
+            - generic "YouTube Video Player" [ref=f1e3]
+            - generic [ref=f1e5]:
+              - generic:
+                - generic:
+                  - button "Play video" [ref=f1e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f1e12] [cursor=pointer]
+                  - generic [ref=f1e19]:
+                    - generic [ref=f1e20]:
+                      - 'link "Syros HTX: Ventilated Seats, Sunroof & Turbo Power! Quick Review of the Kia Syros HTX Petrol Manual" [ref=f1e21] [cursor=pointer]':
+                        - /url: https://www.youtube.com/watch?v=pTQczLGBdC4
+                      - link "Rediff Originals" [ref=f1e22] [cursor=pointer]:
+                        - /url: /channel/UCF8pj6t_BKWERj35FiWlEXA
+                        - generic [ref=f1e23]: Rediff Originals
+                    - generic [ref=f1e24]:
+                      - button [ref=f1e25] [cursor=pointer]
+                      - generic [ref=f1e27]:
+                        - generic: Rediff Originals
+                        - generic: 4.63K subscribers
+        - 'heading "The Kia Syros HTX: Yay Or Nay?" [level=2] [ref=e119]':
+          - 'link "The Kia Syros HTX: Yay Or Nay?" [ref=e120] [cursor=pointer]':
+            - /url: https://www.youtube.com/watch?v=pTQczLGBdC4
+        - paragraph [ref=e121]:
+          - text: Follow Rediff on
+          - link "YouTube >" [ref=e122] [cursor=pointer]:
+            - /url: https://www.youtube.com/@RediffOriginals
+  - generic [ref=e124]:
+    - generic [ref=e125]:
+      - link "LIVE":
+        - /url: https://m.rediff.com/news/commentary/2026/apr/21/liveupdates.htm
+        - generic [ref=e126] [cursor=pointer]: LIVE
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - text: 18:06
+          - link "Over 11.6 lakh Indians return from West Asia amid conflict; 12 seafarers rescued from Iraq" [ref=e130] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/over-11.6-lakh-indians-return-from-west-asia-amid-conflict-12-seafarers-rescued-from-iraq/da3674f0a69594e19a47c2ff077082a8
+            - img [ref=e132]
+            - generic [ref=e133]: Over 11.6 lakh Indians return from West Asia amid conflict; 12 seafarers rescued from Iraq
+        - generic [ref=e134]:
+          - text: 17:11
+          - link "Stock markets climb nearly 1% amid Islamabad talks buzz" [ref=e136] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/stock-markets-climb-nearly-1-amid-islamabad-talks-buzz/649c1b05e74e1afa0b306a005dec815f
+            - img [ref=e138]
+            - generic [ref=e139]: Stock markets climb nearly 1% amid Islamabad talks buzz
+        - generic [ref=e140]:
+          - text: 17:03
+          - link "US, Iran signal they will go to Pak for ceasefire talks" [ref=e142] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/us-iran-signal-they-will-go-to-pak-for-ceasefire-talks/f230d2a615312d2b88f3629faeda2625
+            - img [ref=e144]
+            - generic [ref=e145]: US, Iran signal they will go to Pak for ceasefire talks
+        - generic [ref=e146]:
+          - text: 16:52
+          - link "Kharge clarifies on 'terrorist' remark for PM" [ref=e148] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/kharge-clarifies-on-terrorist-remark-for-pm/1988071b78cdbd47c52db362a5d6a2c5
+            - img [ref=e150]
+            - generic [ref=e151]: Kharge clarifies on 'terrorist' remark for PM
+        - generic [ref=e152]:
+          - text: 16:50
+          - link "Bihar CM Samrat Choudhary meets PM" [ref=e154] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/bihar-cm-samrat-choudhary-meets-pm/5cf7dfc855263340e6566602262fbef1
+            - img [ref=e156]
+            - generic [ref=e157]: Bihar CM Samrat Choudhary meets PM
+        - generic [ref=e158]:
+          - text: 16:47
+          - 'link "Iran war: Crude oil prices jump from $63 to $116" [ref=e160] [cursor=pointer]':
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/iran-war-crude-oil-prices-jump-from-63-to-116/8e206076b321689bddae231c6fa39cec
+            - img [ref=e162]
+            - generic [ref=e163]: "Iran war: Crude oil prices jump from $63 to $116"
+        - generic [ref=e164]:
+          - text: 16:21
+          - link "Family of ponywallah shot in Pahalgam gifted house by..." [ref=e166] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/family-of-ponywallah-shot-in-pahalgam-gifted-house-by.../a7bae0990d615b1309a455465b358feb
+            - img [ref=e168]
+            - generic [ref=e169]: Family of ponywallah shot in Pahalgam gifted house by...
+        - generic [ref=e170]:
+          - text: 15:56
+          - link "TCS employee Nida Khan on the run involved in conversions" [ref=e172] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/tcs-employee-nida-khan-on-the-run-involved-in-conversions/339ba34545e4466aa547f794ebf15e0c
+            - img [ref=e174]
+            - generic [ref=e175]: TCS employee Nida Khan on the run involved in conversions
+        - generic [ref=e176]:
+          - text: 15:52
+          - link "Iran takes a swipe at Trump" [ref=e178] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/iran-takes-a-swipe-at-trump/3801498d99c890d878595726ddabf627
+            - img [ref=e180]
+            - generic [ref=e181]: Iran takes a swipe at Trump
+        - generic [ref=e182]:
+          - text: 15:39
+          - 'link "Iran war: Airlines are about to run out of jet fuel" [ref=e184] [cursor=pointer]':
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/iran-war-airlines-are-about-to-run-out-of-jet-fuel/3dc5aad3e5cc0d55ff6888a6b373de05
+            - img [ref=e186]
+            - generic [ref=e187]: "Iran war: Airlines are about to run out of jet fuel"
+        - generic [ref=e188]:
+          - text: 15:21
+          - link "Sharad Pawar hospitalised in Mumbai" [ref=e190] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/sharad-pawar-hospitalised-in-mumbai/b24482dba67b615a9192e7f2e28b628c
+            - img [ref=e192]
+            - generic [ref=e193]: Sharad Pawar hospitalised in Mumbai
+        - generic [ref=e194]:
+          - text: 14:52
+          - link "Pakistan receives final USD 1 billion Saudi deposit" [ref=e196] [cursor=pointer]:
+            - /url: https://m.rediff.com/news/commentary/2026/apr/21/pakistan-receives-final-usd-1-billion-saudi-deposit/cfdb166aa39a7fd9a6298a20e21ac475
+            - img [ref=e198]
+            - generic [ref=e199]: Pakistan receives final USD 1 billion Saudi deposit
+    - generic [ref=e200]:
+      - generic [ref=e201]: Showing 1/3
+      - button ">" [ref=e202] [cursor=pointer]
+      - button "<" [disabled] [ref=e203] [cursor=pointer]
+      - link "See More >" [ref=e205] [cursor=pointer]:
+        - /url: https://m.rediff.com/news/commentary/2026/apr/21/liveupdates.htm
+  - heading "MORE NEWS" [level=2] [ref=e206]:
+    - link "MORE NEWS" [ref=e207] [cursor=pointer]:
+      - /url: https://www.rediff.com/news
+      - text: MORE NEWS
+  - generic [ref=e209]:
+    - generic [ref=e210]:
+      - link "Sai Loves To Switch It Up" [ref=e212] [cursor=pointer]:
+        - /url: https://www.rediff.com/getahead/report/sai-tamhankar-loves-to-switch-it-up/20260421.htm
+        - img "Sai Loves To Switch It Up" [ref=e213]
+      - heading "Sai Loves To Switch It Up" [level=2] [ref=e216]:
+        - link "Sai Loves To Switch It Up" [ref=e217] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/sai-tamhankar-loves-to-switch-it-up/20260421.htm
+      - generic [ref=e218]:
+        - paragraph [ref=e219]: 2 min read
+        - paragraph [ref=e220]: 6 hours ago
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - link "David Dhawan:'This Could Be My Last Film'" [ref=e224] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/is-hai-jawani-toh-ishq-hona-hai-david-dhawans-last-film/20260421.htm
+          - img "David Dhawan:'This Could Be My Last Film'" [ref=e225]
+        - generic [ref=e228]:
+          - heading "David Dhawan:'This Could Be My Last Film'" [level=3] [ref=e229]:
+            - link "David Dhawan:'This Could Be My Last Film'" [ref=e230] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/report/is-hai-jawani-toh-ishq-hona-hai-david-dhawans-last-film/20260421.htm
+          - generic [ref=e231]:
+            - paragraph [ref=e232]: 4 min read
+            - paragraph [ref=e233]: 3 hours ago
+      - generic [ref=e234]:
+        - link "Why Are Suhana, Aditi Blushing?" [ref=e236] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/why-are-suhana-khan-aditi-bhatia-blushing/20260421.htm
+          - img "Why Are Suhana, Aditi Blushing?" [ref=e237]
+        - generic [ref=e240]:
+          - heading "Why Are Suhana, Aditi Blushing?" [level=3] [ref=e241]:
+            - link "Why Are Suhana, Aditi Blushing?" [ref=e242] [cursor=pointer]:
+              - /url: https://www.rediff.com/getahead/report/why-are-suhana-khan-aditi-bhatia-blushing/20260421.htm
+          - generic [ref=e243]:
+            - paragraph [ref=e244]: 2 min read
+            - paragraph [ref=e245]: 4 hours ago
+    - generic [ref=e246]:
+      - generic [ref=e247]:
+        - heading "Big relief as Bumrah breaks five-match wicketless run" [level=3] [ref=e248]:
+          - link "Big relief as Bumrah breaks five-match wicketless run" [ref=e249] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-big-relief-as-jasprit-bumrah-breaks-five-match-wicketless-run/20260421.htm
+        - paragraph [ref=e250]: 4 min read
+      - generic [ref=e251]:
+        - heading "Aishwarya, Abhishek Celebrate 19 Yrs of Marital Bliss" [level=3] [ref=e252]:
+          - link "Aishwarya, Abhishek Celebrate 19 Yrs of Marital Bliss" [ref=e253] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/aishwarya-abhishek-celebrate-19-years-of-marital-bliss/20260421.htm
+        - paragraph [ref=e254]: 2 min read
+      - generic [ref=e255]:
+        - heading "'Ashaji Helped Us Get DDLJ'" [level=3] [ref=e256]:
+          - link "'Ashaji Helped Us Get DDLJ'" [ref=e257] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/special/asha-bhosle-helped-us-get-dilwale-dulhania-le-jayenge/20260421.htm
+        - paragraph [ref=e258]: 12 min read
+      - generic [ref=e259]:
+        - 'heading "Tilak''s Strike Rate Against GT: 356.52!" [level=3] [ref=e260]':
+          - 'link "Tilak''s Strike Rate Against GT: 356.52!" [ref=e261] [cursor=pointer]':
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-varmas-strike-rate-against-gt-35652/20260421.htm
+        - paragraph [ref=e262]: 4 min read
+      - generic [ref=e263]:
+        - heading "'A Single Teacher's Faith Can Alter A Child's Life'" [level=3] [ref=e264]:
+          - link "'A Single Teacher's Faith Can Alter A Child's Life'" [ref=e265] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/rouble-nagi-winner-global-teacher-prize-a-single-teachers-faith-can-alter-the-trajectory-of-a-childs-life/20260420.htm
+        - paragraph [ref=e266]: 13 min read
+      - paragraph [ref=e267]:
+        - link "See More >" [ref=e268] [cursor=pointer]:
+          - /url: https://www.rediff.com/news
+  - generic [ref=e270]:
+    - generic [ref=e271]: Advertisement
+    - generic:
+      - insertion
+  - generic [ref=e272]:
+    - heading "NEWS" [level=2] [ref=e273]:
+      - link "NEWS" [ref=e275] [cursor=pointer]:
+        - /url: https://www.rediff.com/news
+    - generic [ref=e276]:
+      - generic [ref=e277]:
+        - link "And Life Goes On In Tehran Amidst The War" [ref=e279] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/report/and-life-goes-on-in-tehran-amidst-the-war/20260421.htm
+          - img "And Life Goes On In Tehran Amidst The War" [ref=e280]
+        - heading "And Life Goes On In Tehran Amidst The War" [level=2] [ref=e281]:
+          - link "And Life Goes On In Tehran Amidst The War" [ref=e282] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/and-life-goes-on-in-tehran-amidst-the-war/20260421.htm
+        - paragraph [ref=e283]: 3 min read
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - link "'What Those Terrorists Did Was The Murder Of Humanity'" [ref=e287] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/interview/pahalgam-terror-attack-what-those-terrorists-did-was-the-murder-of-humanity/20260421.htm
+            - img "'What Those Terrorists Did Was The Murder Of Humanity'" [ref=e288]
+          - generic [ref=e289]:
+            - heading "'What Those Terrorists Did Was The Murder Of Humanity'" [level=3] [ref=e290]:
+              - link "'What Those Terrorists Did Was The Murder Of Humanity'" [ref=e291] [cursor=pointer]:
+                - /url: https://www.rediff.com/news/interview/pahalgam-terror-attack-what-those-terrorists-did-was-the-murder-of-humanity/20260421.htm
+            - generic [ref=e292]:
+              - paragraph [ref=e293]: 12 min read
+              - paragraph [ref=e294]: 8 hours ago
+        - generic [ref=e295]:
+          - link "Why Government Wanted To Rush Delimitation Bill" [ref=e297] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/interview/why-government-wanted-to-rush-delimitation-bill/20260421.htm
+            - img "Why Government Wanted To Rush Delimitation Bill" [ref=e298]
+          - generic [ref=e299]:
+            - heading "Why Government Wanted To Rush Delimitation Bill" [level=3] [ref=e300]:
+              - link "Why Government Wanted To Rush Delimitation Bill" [ref=e301] [cursor=pointer]:
+                - /url: https://www.rediff.com/news/interview/why-government-wanted-to-rush-delimitation-bill/20260421.htm
+            - generic [ref=e302]:
+              - paragraph [ref=e303]: 11 min read
+              - paragraph [ref=e304]: 9 hours ago
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - heading "Supreme Court questions ban on touching Sabarimala temple deity" [level=3] [ref=e307]:
+            - link "Supreme Court questions ban on touching Sabarimala temple deity" [ref=e308] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/supreme-court-questions-ban-on-touching-sabarimala-temple-deity/20260421.htm
+          - paragraph [ref=e309]: 5 min read
+        - generic [ref=e310]:
+          - heading "'US was aware Israel would attack Iran'" [level=3] [ref=e311]:
+            - link "'US was aware Israel would attack Iran'" [ref=e312] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/us-was-aware-israel-would-attack-iran/20260421.htm
+          - paragraph [ref=e313]: 4 min read
+        - generic [ref=e314]:
+          - 'heading "Iran will face problems ''like never seen before'' if...: Trump" [level=3] [ref=e315]':
+            - 'link "Iran will face problems ''like never seen before'' if...: Trump" [ref=e316] [cursor=pointer]':
+              - /url: https://www.rediff.com/news/report/iran-will-face-problems-like-never-seen-before-if-trump/20260421.htm
+          - paragraph [ref=e317]: 4 min read
+        - generic [ref=e318]:
+          - heading "4 injured in violent clashes inside Germany gurdwara" [level=3] [ref=e319]:
+            - link "4 injured in violent clashes inside Germany gurdwara" [ref=e320] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/4-injured-in-violent-clashes-inside-germany-gurdwara/20260421.htm
+          - paragraph [ref=e321]: 3 min read
+        - generic [ref=e322]:
+          - heading "Vance heads to Pak as deadline nears; Iran yet to confirm" [level=3] [ref=e323]:
+            - link "Vance heads to Pak as deadline nears; Iran yet to confirm" [ref=e324] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/vance-heads-to-pak-as-ceasefire-deadline-nears-iran-yet-to-confirm/20260421.htm
+          - paragraph [ref=e325]: 4 min read
+        - paragraph [ref=e326]:
+          - link "See More >" [ref=e327] [cursor=pointer]:
+            - /url: https://www.rediff.com/news
+  - generic [ref=e329]:
+    - heading "NEWS" [level=2] [ref=e330]:
+      - link "NEWS" [ref=e332] [cursor=pointer]:
+        - /url: https://www.rediff.com/news
+    - generic [ref=e333]:
+      - generic [ref=e334]:
+        - 'link "West Bengal Elections: How Many Crorepatis In Phase I?" [ref=e336] [cursor=pointer]':
+          - /url: https://www.rediff.com/news/report/west-bengal-elections-how-many-crorepatis-in-phase-i/20260421.htm
+          - 'img "West Bengal Elections: How Many Crorepatis In Phase I?" [ref=e337]'
+        - 'heading "West Bengal Elections: How Many Crorepatis In Phase I?" [level=2] [ref=e338]':
+          - 'link "West Bengal Elections: How Many Crorepatis In Phase I?" [ref=e339] [cursor=pointer]':
+            - /url: https://www.rediff.com/news/report/west-bengal-elections-how-many-crorepatis-in-phase-i/20260421.htm
+        - paragraph [ref=e340]: 2 min read
+      - generic [ref=e341]:
+        - generic [ref=e342]:
+          - link "Will Vijay Be Tamil Nadu's Showstopper?" [ref=e344] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/special/will-vijay-be-tamil-nadus-showstopper/20260421.htm
+            - img "Will Vijay Be Tamil Nadu's Showstopper?" [ref=e345]
+          - generic [ref=e346]:
+            - heading "Will Vijay Be Tamil Nadu's Showstopper?" [level=3] [ref=e347]:
+              - link "Will Vijay Be Tamil Nadu's Showstopper?" [ref=e348] [cursor=pointer]:
+                - /url: https://www.rediff.com/news/special/will-vijay-be-tamil-nadus-showstopper/20260421.htm
+            - generic [ref=e349]:
+              - paragraph [ref=e350]: 6 min read
+              - paragraph [ref=e351]: 7 hours ago
+        - generic [ref=e352]:
+          - link "A War With No Exit Strategy, No Victory To Declare" [ref=e354] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/special/a-war-with-no-exit-strategy-no-victory-to-declare/20260420.htm
+            - img "A War With No Exit Strategy, No Victory To Declare" [ref=e355]
+          - generic [ref=e356]:
+            - heading "A War With No Exit Strategy, No Victory To Declare" [level=3] [ref=e357]:
+              - link "A War With No Exit Strategy, No Victory To Declare" [ref=e358] [cursor=pointer]:
+                - /url: https://www.rediff.com/news/special/a-war-with-no-exit-strategy-no-victory-to-declare/20260420.htm
+            - generic [ref=e359]:
+              - paragraph [ref=e360]: 16 min read
+              - paragraph [ref=e361]: 1 day ago
+      - generic [ref=e362]:
+        - generic [ref=e363]:
+          - heading "Did Modi's 'address to nation' breach poll code?" [level=3] [ref=e364]:
+            - link "Did Modi's 'address to nation' breach poll code?" [ref=e365] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/did-modis-national-address-breach-poll-code-700-citizens-move-ec/20260421.htm
+          - paragraph [ref=e366]: 3 min read
+        - generic [ref=e367]:
+          - heading "Iran ready to reveal 'new battlefield cards' amid threats" [level=3] [ref=e368]:
+            - link "Iran ready to reveal 'new battlefield cards' amid threats" [ref=e369] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/iran-ready-to-reveal-new-cards-on-battlefield-amid-trumps-threats/20260421.htm
+          - paragraph [ref=e370]: 4 min read
+        - generic [ref=e371]:
+          - heading "India in touch with Iran to ensure ship safety in Hormuz" [level=3] [ref=e372]:
+            - link "India in touch with Iran to ensure ship safety in Hormuz" [ref=e373] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/india-in-touch-with-iran-to-secure-safe-hormuz-passage-for-its-ships/20260421.htm
+          - paragraph [ref=e374]: 4 min read
+        - generic [ref=e375]:
+          - heading "'This War Can Easily Go On For Months Longer'" [level=3] [ref=e376]:
+            - link "'This War Can Easily Go On For Months Longer'" [ref=e377] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/interview/tom-cooper-this-war-can-easily-go-on-for-months-longer/20260420.htm
+          - paragraph [ref=e378]: 7 min read
+        - generic [ref=e379]:
+          - heading "FBI chief Kash Patel sues 'The Atlantic' for $250 mn over drinking row" [level=3] [ref=e380]:
+            - link "FBI chief Kash Patel sues 'The Atlantic' for $250 mn over drinking row" [ref=e381] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/fbi-chief-kash-patel-sues-the-atlantic-for-250m-alleges-malicious-hit-job/20260421.htm
+          - paragraph [ref=e382]: 4 min read
+        - paragraph [ref=e383]:
+          - link "See More >" [ref=e384] [cursor=pointer]:
+            - /url: https://www.rediff.com/news
+  - generic [ref=e385]:
+    - generic [ref=e386]: Advertisement
+    - iframe [ref=e390]:
+      - generic [ref=f7e1]:
+        - link [ref=f7e2] [cursor=pointer]:
+          - /url: https://pagead2.googlesyndication.com/pcs/click?xai=AKAOjstueeT6TFmg8TPft0zr3uOgoV3U_-uPi776YthGRmOhvIKKxXbf5mKyXRb6n5WZEneGiRauzy0S3H9bHskoo8P6Lt5wSO0nInGhZi6sajMmMEfhO0A2yIaGtIC2qs_04wrW7dlGrWIgkKYwxOTHGPEadoxzhnrX-usqYc8UrizNAHwWOMBI2RWW5MEEtKK_7S-Ugd5N3kpPVzfk8FPAuKSfgZTAbbvC1zwsEyt_AeEOWQFQE1SEy9sIn3HyqVB5qu-CSsk6eJNNcR99yTtmuOVJEEeTZ2pxrw4X6N2gkq6V9d_KtM6UrS-VoeteWJj4RI3i54nDcp1EzdTHzBGUi0IQgrT9xQGhw2V8nkiJyUfGnEuBZMb2elU_apZkpuNjPGgt8u5b6MldDjUQrBu99r2YrwRFFuibkH7P2pdAs4Ts_uROY7EEeL0&sig=Cg0ArKJSzBpaIJ7MXpBr&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://tv.rediff.com%3Futm_source%3Dredifftv%26utm_medium%3Dbanner_970x250_INTL%26utm_campaign%3Dredifftv_launch%26utm_content%3Dredifftv_launch_banner_970x250_INTL
+        - img [ref=f7e6] [cursor=pointer]
+        - button [ref=f7e9] [cursor=pointer]:
+          - img [ref=f7e10]
+  - heading "LATEST NEWS" [level=2] [ref=e392]:
+    - link "LATEST NEWS" [ref=e393] [cursor=pointer]:
+      - /url: https://www.rediff.com/latest-news
+      - text: LATEST NEWS
+  - generic [ref=e395]:
+    - generic [ref=e396]:
+      - link "Why India Faces Stricter Doping Rules In Athletics" [ref=e398] [cursor=pointer]:
+        - /url: https://www.rediff.com/sports/report/afi-vows-to-combat-doping-after-high-risk-tag/20260421.htm
+        - img "Why India Faces Stricter Doping Rules In Athletics" [ref=e399]
+      - heading "Why India Faces Stricter Doping Rules In Athletics" [level=2] [ref=e402]:
+        - link "Why India Faces Stricter Doping Rules In Athletics" [ref=e403] [cursor=pointer]:
+          - /url: https://www.rediff.com/sports/report/afi-vows-to-combat-doping-after-high-risk-tag/20260421.htm
+      - paragraph [ref=e405]: 11 minutes ago
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - 'link "IPL 2026: Ignored Holder breaks silence after GT''s collapse" [ref=e409] [cursor=pointer]':
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-ignored-holder-breaks-silence-after-gts-collapse/20260421.htm
+          - 'img "IPL 2026: Ignored Holder breaks silence after GT''s collapse" [ref=e410]'
+        - generic [ref=e413]:
+          - 'heading "IPL 2026: Ignored Holder breaks silence after GT''s collapse" [level=3] [ref=e414]':
+            - 'link "IPL 2026: Ignored Holder breaks silence after GT''s collapse" [ref=e415] [cursor=pointer]':
+              - /url: https://www.rediff.com/cricket/report/ipl-2026-ignored-holder-breaks-silence-after-gts-collapse/20260421.htm
+          - paragraph [ref=e417]: 17 minutes ago
+      - generic [ref=e418]:
+        - 'link "J&K Police Crackdown: Drug Peddlers'' Assets Seized" [ref=e420] [cursor=pointer]':
+          - /url: https://www.rediff.com/news/report/j-k-police-attach-drug-peddlers-properties-worth-rs-55-lakh/20260421.htm
+          - 'img "J&K Police Crackdown: Drug Peddlers'' Assets Seized" [ref=e421]'
+        - generic [ref=e424]:
+          - 'heading "J&K Police Crackdown: Drug Peddlers'' Assets Seized" [level=3] [ref=e425]':
+            - 'link "J&K Police Crackdown: Drug Peddlers'' Assets Seized" [ref=e426] [cursor=pointer]':
+              - /url: https://www.rediff.com/news/report/j-k-police-attach-drug-peddlers-properties-worth-rs-55-lakh/20260421.htm
+          - paragraph [ref=e428]: 17 minutes ago
+    - generic [ref=e429]:
+      - generic [ref=e430]:
+        - heading "Usain Bolt's Big Advice To Australian Sprint Sensation Gout" [level=3] [ref=e431]:
+          - link "Usain Bolt's Big Advice To Australian Sprint Sensation Gout" [ref=e432] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/usain-bolts-big-advice-to-australian-sprint-sensation-gout-gout/20260421.htm
+        - paragraph [ref=e433]: 18 minutes ago
+      - generic [ref=e434]:
+        - heading "Pahalgam Memorial Honours Terror Attack Victims" [level=3] [ref=e435]:
+          - link "Pahalgam Memorial Honours Terror Attack Victims" [ref=e436] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/pahalgam-attack-memorial-kashmir-security-tightened/20260421.htm
+        - paragraph [ref=e437]: 20 minutes ago
+      - generic [ref=e438]:
+        - heading "Mizoram Authorities Destroy 465 Crore Worth Of Seized Drugs" [level=3] [ref=e439]:
+          - link "Mizoram Authorities Destroy 465 Crore Worth Of Seized Drugs" [ref=e440] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/drugs-worth-rs-465-cr-destroyed-in-mizorams-champhai/20260421.htm
+        - paragraph [ref=e441]: 23 minutes ago
+      - generic [ref=e442]:
+        - heading "Yusuf Pathan's Relative Arrested In Mumbai Road Rage Case" [level=3] [ref=e443]:
+          - link "Yusuf Pathan's Relative Arrested In Mumbai Road Rage Case" [ref=e444] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/tmc-mp-yusuf-pathans-kin-arrested-for-assault/20260421.htm
+        - paragraph [ref=e445]: 24 minutes ago
+      - generic [ref=e446]:
+        - heading "Sony Pictures Networks India To Broadcast Asian Games 2026" [level=3] [ref=e447]:
+          - link "Sony Pictures Networks India To Broadcast Asian Games 2026" [ref=e448] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/sony-secures-asian-games-broadcast-rights/20260421.htm
+        - paragraph [ref=e449]: 26 minutes ago
+      - paragraph [ref=e450]:
+        - link "See More >" [ref=e451] [cursor=pointer]:
+          - /url: https://www.rediff.com/latest-news
+  - generic [ref=e453]:
+    - heading "Rediff Podcasts" [level=2] [ref=e454]:
+      - link "Rediff Podcasts" [ref=e455] [cursor=pointer]:
+        - /url: https://www.rediff.com/rediff-podcasts
+        - img "Rediff Podcasts" [ref=e456]
+    - generic [ref=e457]:
+      - 'link "Ajit Balakrishnan: The Man Who Put India On The Web Ajit Balakrishnan: The Man Who Put India On The Web" [ref=e459] [cursor=pointer]':
+        - /url: https://www.rediff.com/news/special/the-rediff-podcast-ajit-balakrishnan-the-man-who-put-india-on-the-web/20260409.htm
+        - 'img "Ajit Balakrishnan: The Man Who Put India On The Web" [ref=e461]'
+        - 'heading "Ajit Balakrishnan: The Man Who Put India On The Web" [level=3] [ref=e462]'
+      - link "Why Homebound Will Always Be Special For Vishal Jethwa Why Homebound Will Always Be Special For Vishal Jethwa" [ref=e464] [cursor=pointer]:
+        - /url: https://www.rediff.com/movies/report/the-rediff-podcast-homebound-actor-vishal-jethwa/20260122.htm
+        - img "Why Homebound Will Always Be Special For Vishal Jethwa" [ref=e466]
+        - heading "Why Homebound Will Always Be Special For Vishal Jethwa" [level=3] [ref=e467]
+      - link "'You Failed India On Stopping Infiltration' 'You Failed India On Stopping Infiltration'" [ref=e469] [cursor=pointer]:
+        - /url: https://www.rediff.com/news/special/the-rediff-podcast-aditya-thackeray/20260112.htm
+        - img "'You Failed India On Stopping Infiltration'" [ref=e471]
+        - heading "'You Failed India On Stopping Infiltration'" [level=3] [ref=e472]
+      - 'link "Budget 2026: Modest Relief For Students, Travellers Budget 2026: Modest Relief For Students, Travellers" [ref=e474] [cursor=pointer]':
+        - /url: https://www.rediff.com/getahead/report/budget-2026-modest-relief-for-students-travellers/20260202.htm
+        - 'img "Budget 2026: Modest Relief For Students, Travellers" [ref=e476]'
+        - 'heading "Budget 2026: Modest Relief For Students, Travellers" [level=3] [ref=e477]'
+    - paragraph [ref=e478]:
+      - link "See More >" [ref=e479] [cursor=pointer]:
+        - /url: https://www.rediff.com/rediff-podcasts
+  - heading "REDIFF GURUS" [level=2] [ref=e481]:
+    - link "REDIFF GURUS" [ref=e482] [cursor=pointer]:
+      - /url: https://gurus.rediff.com?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - text: REDIFF GURUS
+  - generic [ref=e484]:
+    - generic [ref=e485]:
+      - generic [ref=e486]:
+        - link "image Relationship" [ref=e487] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/relationship/marriage-without-s-x-husband-haven-039-intimate-our-second/5249887?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+          - img "image Relationship" [ref=e488]
+        - heading "Can a marriage last without s*x? My husband and I..." [level=2] [ref=e489]:
+          - link "Can a marriage last without s*x? My husband and I..." [ref=e490] [cursor=pointer]:
+            - /url: https://gurus.rediff.com/question/qdtl/relationship/marriage-without-s-x-husband-haven-039-intimate-our-second/5249887?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - generic [ref=e491]:
+        - link "image Career" [ref=e492] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/career/how-upload-improvement-marksheet-original-marksheet-single-pdf-josaa-2026/5249847?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+          - img "image Career" [ref=e493]
+        - heading "Sir how to upload the improvement marksheet and..." [level=2] [ref=e494]:
+          - link "Sir how to upload the improvement marksheet and..." [ref=e495] [cursor=pointer]:
+            - /url: https://gurus.rediff.com/question/qdtl/career/how-upload-improvement-marksheet-original-marksheet-single-pdf-josaa-2026/5249847?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - generic [ref=e496]:
+        - link "image Relationship" [ref=e497] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/relationship/girls-reject-because-tall-handsome-41-single-9-6-job/5249091?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+          - img "image Relationship" [ref=e498]
+        - heading "Girls reject me because I am not so tall and..." [level=2] [ref=e499]:
+          - link "Girls reject me because I am not so tall and..." [ref=e500] [cursor=pointer]:
+            - /url: https://gurus.rediff.com/question/qdtl/relationship/girls-reject-because-tall-handsome-41-single-9-6-job/5249091?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - generic [ref=e501]:
+        - link "image Career" [ref=e502] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/career/mai-2026-12-ke-peper-diya-hai-magar-usme-mere/5250451?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+          - img "image Career" [ref=e503]
+        - heading "Sir mai 2026 me 12 ke peper diya hai magar usme mere..." [level=2] [ref=e504]:
+          - link "Sir mai 2026 me 12 ke peper diya hai magar usme mere..." [ref=e505] [cursor=pointer]:
+            - /url: https://gurus.rediff.com/question/qdtl/career/mai-2026-12-ke-peper-diya-hai-magar-usme-mere/5250451?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+    - generic [ref=e506]:
+      - heading "While roaming in the market recently, I saw apples being sold..." [level=3] [ref=e507]:
+        - link "While roaming in the market recently, I saw apples being sold..." [ref=e508] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/health/while-roaming-market-saw-apples-being-sold-attractive-plastic-container/5250147?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "My fiance broke up with me after our engagement. He just..." [level=3] [ref=e509]:
+        - link "My fiance broke up with me after our engagement. He just..." [ref=e510] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/relationship/fiance-broke-up-our-engagement-messaged-039-s-going-work/5249866?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "Sir,My son got 144 in BITS and 86percentile in Jee, what will..." [level=3] [ref=e511]:
+        - link "Sir,My son got 144 in BITS and 86percentile in Jee, what will..." [ref=e512] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/career/got-144-bits-86percentile-jee-what-best-availabilty-option-engineering/5250613?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "I have a Life Time Super Pension Policy(ULIPs) of ICICI..." [level=3] [ref=e513]:
+        - link "I have a Life Time Super Pension Policy(ULIPs) of ICICI..." [ref=e514] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/money/life-super-pension-policy-ulips-icici-prudential-details-bull-sum/5250089?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "My teenage son is stuck with his phone playing games and..." [level=3] [ref=e515]:
+        - link "My teenage son is stuck with his phone playing games and..." [ref=e516] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/health/teenage-stuck-phone-playing-games-chatting-app-class-9-struggling/5250490?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "My Mother aged 70 plus, is having muscle cramp frequently in..." [level=3] [ref=e517]:
+        - link "My Mother aged 70 plus, is having muscle cramp frequently in..." [ref=e518] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/health/mother-aged-70-plus-having-muscle-cramp-frequently-night-pain/5248611?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "I am 46 years old. We have family of 4 including me, my wife..." [level=3] [ref=e519]:
+        - link "I am 46 years old. We have family of 4 including me, my wife..." [ref=e520] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/money/46-family-4-including-wife-two-sons-17-9-yrs/5250142?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - heading "Hi,I am co-operate employee earn 80 k monthly with 9274₹..." [level=3] [ref=e521]:
+        - link "Hi,I am co-operate employee earn 80 k monthly with 9274₹..." [ref=e522] [cursor=pointer]:
+          - /url: https://gurus.rediff.com/question/qdtl/money/co-operate-employee-earn-80-k-monthly-9274-monthly-pf/5248810?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+      - paragraph [ref=e523]:
+        - link "See More >" [ref=e524] [cursor=pointer]:
+          - /url: https://gurus.rediff.com?utm_source=rediff_home_us&utm_medium=pc&utm_campaign=rediffgurus&utm_content=rediffgurus_rediff_home_us_pc
+    - generic [ref=e526]: Advertisement
+  - generic [ref=e529]:
+    - heading "VIDEOS" [level=2] [ref=e530]:
+      - link "VIDEOS" [ref=e531] [cursor=pointer]:
+        - /url: https://ishare.rediff.com
+        - text: VIDEOS
+    - generic [ref=e533]:
+      - generic [ref=e534]:
+        - img "Rajnath Singh arrives in Berlin" [ref=e536] [cursor=pointer]
+        - heading "Rajnath Singh arrives in Berlin" [level=3] [ref=e537]:
+          - link "Rajnath Singh arrives in Berlin" [ref=e538] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/rajnath-singh-arrives-in-berlin/11381858
+        - generic [ref=e539]:
+          - paragraph [ref=e540]: 0:54 min
+          - paragraph [ref=e541]: 1 hour ago
+      - generic [ref=e542]:
+        - img "Tourists enjoying Shikara rides in Srinagar" [ref=e544] [cursor=pointer]
+        - heading "Tourists enjoying Shikara rides in Srinagar" [level=3] [ref=e545]:
+          - link "Tourists enjoying Shikara rides in Srinagar" [ref=e546] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/tourists-enjoying-shikara-rides-in-srinagar/11381862
+        - generic [ref=e547]:
+          - paragraph [ref=e548]: 2:26 min
+          - paragraph [ref=e549]: 1 hour ago
+      - generic [ref=e550]:
+        - 'img "Watch: Stalin''s Auto Ride & Juice Break in Saidapet on the last day of campaign" [ref=e552] [cursor=pointer]'
+        - 'heading "Watch: Stalin''s Auto Ride & Juice Break in Saidapet on the last day of campaign" [level=3] [ref=e553]':
+          - 'link "Watch: Stalin''s Auto Ride & Juice Break in Saidapet on the last day of campaign" [ref=e554] [cursor=pointer]':
+            - /url: https://ishare.rediff.com/video/others/watch-stalin-s-auto-ride-amp-juice-break-in-saidapet-on-the-last-day-of-campaign/11381836
+        - generic [ref=e555]:
+          - paragraph [ref=e556]: 1:30 min
+          - paragraph [ref=e557]: 5 hours ago
+      - generic [ref=e558]:
+        - 'img "WATCH: Overwhelmed Woman Cries After Meeting PM Modi in Purulia" [ref=e560] [cursor=pointer]'
+        - 'heading "WATCH: Overwhelmed Woman Cries After Meeting PM Modi in Purulia" [level=3] [ref=e561]':
+          - 'link "WATCH: Overwhelmed Woman Cries After Meeting PM Modi in Purulia" [ref=e562] [cursor=pointer]':
+            - /url: https://ishare.rediff.com/video/others/watch-overwhelmed-woman-cries-after-meeting-pm-modi-in-purulia/11381838
+        - generic [ref=e563]:
+          - paragraph [ref=e564]: 2:11 min
+          - paragraph [ref=e565]: 4 hours ago
+    - generic [ref=e566]:
+      - generic [ref=e567]:
+        - img "Kedarnath Dham Decked with Flowers Ahead of Grand Opening" [ref=e569] [cursor=pointer]
+        - heading "Kedarnath Dham Decked with Flowers Ahead of Grand Opening" [level=3] [ref=e570]:
+          - link "Kedarnath Dham Decked with Flowers Ahead of Grand Opening" [ref=e571] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/kedarnath-dham-decked-with-flowers-ahead-of-grand-opening/11381842
+        - generic [ref=e572]:
+          - paragraph [ref=e573]: 2:56 min
+          - paragraph [ref=e574]: 3 hours ago
+      - generic [ref=e575]:
+        - img "South Korean First Lady's Stunning Traditional Look" [ref=e577] [cursor=pointer]
+        - heading "South Korean First Lady's Stunning Traditional Look" [level=3] [ref=e578]:
+          - link "South Korean First Lady's Stunning Traditional Look" [ref=e579] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/south-korean-first-lady-s-stunning-traditional-look/11381818
+        - generic [ref=e580]:
+          - paragraph [ref=e581]: 0:39 min
+          - paragraph [ref=e582]: 6 hours ago
+      - generic [ref=e583]:
+        - img "Raashii Khanna Stuns in Traditional Avatar" [ref=e585] [cursor=pointer]
+        - heading "Raashii Khanna Stuns in Traditional Avatar" [level=3] [ref=e586]:
+          - link "Raashii Khanna Stuns in Traditional Avatar" [ref=e587] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/raashii-khanna-stuns-in-traditional-avatar/11381831
+        - generic [ref=e588]:
+          - paragraph [ref=e589]: 1:10 min
+          - paragraph [ref=e590]: 5 hours ago
+      - generic [ref=e591]:
+        - img "A year after the Pahalgam terror attack, tourists flock to Dal Lake amid tight security" [ref=e593] [cursor=pointer]
+        - heading "A year after the Pahalgam terror attack, tourists flock to Dal Lake amid tight security" [level=3] [ref=e594]:
+          - link "A year after the Pahalgam terror attack, tourists flock to Dal Lake amid tight security" [ref=e595] [cursor=pointer]:
+            - /url: https://ishare.rediff.com/video/others/a-year-after-the-pahalgam-terror-attack-tourists-flock-to-dal-lake-amid-tight-security/11381833
+        - generic [ref=e596]:
+          - paragraph [ref=e597]: 2:30 min
+          - paragraph [ref=e598]: 5 hours ago
+    - paragraph [ref=e599]:
+      - link "See More >" [ref=e600] [cursor=pointer]:
+        - /url: https://ishare.rediff.com
+  - generic [ref=e601]:
+    - heading "PHOTOS" [level=2] [ref=e602]:
+      - link "PHOTOS" [ref=e604] [cursor=pointer]:
+        - /url: https://www.rediff.com/photos
+    - generic [ref=e605]:
+      - generic [ref=e606]:
+        - 'link "Ayushmann: I Like My Films To Be Clean" [ref=e608] [cursor=pointer]':
+          - /url: https://www.rediff.com/movies/report/ayushmann-khurrana-i-like-my-films-to-be-clean/20260421.htm
+          - 'img "Ayushmann: I Like My Films To Be Clean" [ref=e609]'
+        - 'heading "Ayushmann: I Like My Films To Be Clean" [level=3] [ref=e610]':
+          - 'link "Ayushmann: I Like My Films To Be Clean" [ref=e611] [cursor=pointer]':
+            - /url: https://www.rediff.com/movies/report/ayushmann-khurrana-i-like-my-films-to-be-clean/20260421.htm
+      - generic [ref=e613]:
+        - generic [ref=e614]:
+          - link "photoimage" [ref=e615] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/and-life-goes-on-in-tehran-amidst-the-war/20260421.htm
+            - img "And Life Goes On In Tehran Amidst The War" [ref=e616]
+          - heading "And Life Goes On In Tehran Amidst The War" [level=3] [ref=e617]:
+            - link "And Life Goes On In Tehran Amidst The War" [ref=e618] [cursor=pointer]:
+              - /url: https://www.rediff.com/news/report/and-life-goes-on-in-tehran-amidst-the-war/20260421.htm
+        - generic [ref=e619]:
+          - link "photoimage" [ref=e620] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/why-are-suhana-khan-aditi-bhatia-blushing/20260421.htm
+            - img "Why Are Suhana, Aditi Blushing?" [ref=e621]
+          - heading "Why Are Suhana, Aditi Blushing?" [level=3] [ref=e622]:
+            - link "Why Are Suhana, Aditi Blushing?" [ref=e623] [cursor=pointer]:
+              - /url: https://www.rediff.com/getahead/report/why-are-suhana-khan-aditi-bhatia-blushing/20260421.htm
+        - generic [ref=e624]:
+          - link "photoimage" [ref=e625] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/aishwarya-abhishek-celebrate-19-years-of-marital-bliss/20260421.htm
+            - img "Aishwarya, Abhishek Celebrate 19 Yrs of Marital Bliss" [ref=e626]
+          - heading "Aishwarya, Abhishek Celebrate 19 Yrs of Marital Bliss" [level=3] [ref=e627]:
+            - link "Aishwarya, Abhishek Celebrate 19 Yrs of Marital Bliss" [ref=e628] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/report/aishwarya-abhishek-celebrate-19-years-of-marital-bliss/20260421.htm
+        - generic [ref=e629]:
+          - link "photoimage" [ref=e630] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/report/west-bengal-elections-how-many-crorepatis-in-phase-i/20260421.htm
+            - 'img "West Bengal Elections: How Many Crorepatis In Phase I?" [ref=e631]'
+          - 'heading "West Bengal Elections: How Many Crorepatis In Phase I?" [level=3] [ref=e632]':
+            - 'link "West Bengal Elections: How Many Crorepatis In Phase I?" [ref=e633] [cursor=pointer]':
+              - /url: https://www.rediff.com/news/report/west-bengal-elections-how-many-crorepatis-in-phase-i/20260421.htm
+    - generic [ref=e634]:
+      - generic [ref=e635]:
+        - link "Sai Loves To Switch It Up" [ref=e637] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/sai-tamhankar-loves-to-switch-it-up/20260421.htm
+          - img "Sai Loves To Switch It Up" [ref=e638]
+        - heading "Sai Loves To Switch It Up" [level=3] [ref=e639]:
+          - link "Sai Loves To Switch It Up" [ref=e640] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/sai-tamhankar-loves-to-switch-it-up/20260421.htm
+      - generic [ref=e641]:
+        - link "Dell 15 (2026) Arrives In India Starting ₹69,699" [ref=e643] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/dell-15-2026-launched-with-intel-core-ultra-chips-and-slim-design-gadgets-and-gaming-listicle/20260421.htm
+          - img "Dell 15 (2026) Arrives In India Starting ₹69,699" [ref=e644]
+        - heading "Dell 15 (2026) Arrives In India Starting ₹69,699" [level=3] [ref=e645]:
+          - link "Dell 15 (2026) Arrives In India Starting ₹69,699" [ref=e646] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/dell-15-2026-launched-with-intel-core-ultra-chips-and-slim-design-gadgets-and-gaming-listicle/20260421.htm
+      - generic [ref=e647]:
+        - link "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e649] [cursor=pointer]:
+          - /url: https://www.rediff.com/sports/report/carlos-alcaraz-aryna-sabalenka-win-top-laureus-honours-comaneci-yamal-pix/20260421.htm
+          - img "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e650]
+        - heading "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [level=3] [ref=e651]:
+          - link "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e652] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/carlos-alcaraz-aryna-sabalenka-win-top-laureus-honours-comaneci-yamal-pix/20260421.htm
+      - generic [ref=e653]:
+        - link "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e655] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/watch-when-riteish-genelia-cried-at-raja-shivaji-trailer/20260421.htm
+          - img "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e656]
+        - heading "When Riteish-Genelia Cried At Raja Shivaji Trailer" [level=3] [ref=e657]:
+          - link "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e658] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/watch-when-riteish-genelia-cried-at-raja-shivaji-trailer/20260421.htm
+      - generic [ref=e659]:
+        - link "Atlee, Priya Celebrate Daughter's Birth" [ref=e661] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/atlee-priya-celebrate-daughters-birth/20260420.htm
+          - img "Atlee, Priya Celebrate Daughter's Birth" [ref=e662]
+        - heading "Atlee, Priya Celebrate Daughter's Birth" [level=3] [ref=e663]:
+          - link "Atlee, Priya Celebrate Daughter's Birth" [ref=e664] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/atlee-priya-celebrate-daughters-birth/20260420.htm
+    - paragraph [ref=e665]:
+      - link "See More >" [ref=e666] [cursor=pointer]:
+        - /url: https://www.rediff.com/photos
+  - generic [ref=e667]:
+    - heading "📺 REDIFF-TV" [level=2] [ref=e668]:
+      - text: 📺
+      - link "REDIFF-TV" [ref=e669] [cursor=pointer]:
+        - /url: https://tv.rediff.com
+    - generic [ref=e670]:
+      - link "4 pm News Flash – April 21, 2026 4 pm News Flash – April 21, 2026 0:19 min" [ref=e672] [cursor=pointer]:
+        - /url: https://tv.rediff.com/hourly/15-21-hourly_news.mp4_video/1521042026
+        - img "4 pm News Flash – April 21, 2026" [ref=e674]
+        - heading "4 pm News Flash – April 21, 2026" [level=3] [ref=e675]
+        - paragraph [ref=e677]: 0:19 min
+      - link "3 pm News Flash – April 21, 2026 3 pm News Flash – April 21, 2026 0:29 min" [ref=e679] [cursor=pointer]:
+        - /url: https://tv.rediff.com/hourly/14-21-hourly_news.mp4_video/1421042026
+        - img "3 pm News Flash – April 21, 2026" [ref=e681]
+        - heading "3 pm News Flash – April 21, 2026" [level=3] [ref=e682]
+        - paragraph [ref=e684]: 0:29 min
+      - link "Why is it necessary for a Commodity trader to track metal prices daily? Why is it necessary for a Commodity trader to track metal prices daily? 5:21 min" [ref=e686] [cursor=pointer]:
+        - /url: https://tv.rediff.com/getahead/why-is-it-necessary-for-a-commodity-trader-to-track-metal-prices-daily/381766
+        - img "Why is it necessary for a Commodity trader to track metal prices daily?" [ref=e688]
+        - heading "Why is it necessary for a Commodity trader to track metal prices daily?" [level=3] [ref=e689]
+        - paragraph [ref=e691]: 5:21 min
+      - link "Big relief as Jasprit Bumrah breaks five-match wicketless run Big relief as Jasprit Bumrah breaks five-match wicketless run 4:15 min" [ref=e693] [cursor=pointer]:
+        - /url: https://tv.rediff.com/cricket/big-relief-as-jasprit-bumrah-breaks-fivematch-wicketless-run/381773
+        - img "Big relief as Jasprit Bumrah breaks five-match wicketless run" [ref=e695]
+        - heading "Big relief as Jasprit Bumrah breaks five-match wicketless run" [level=3] [ref=e696]
+        - paragraph [ref=e698]: 4:15 min
+    - paragraph [ref=e699]:
+      - link "See More >" [ref=e700] [cursor=pointer]:
+        - /url: https://tv.rediff.com
+  - heading "CRICKET" [level=2] [ref=e701]:
+    - link "CRICKET" [ref=e703] [cursor=pointer]:
+      - /url: https://www.rediff.com/cricket
+  - generic [ref=e704]:
+    - generic [ref=e705]:
+      - link "'Tilak needs to be bit more positive against spinners'" [ref=e707] [cursor=pointer]:
+        - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-needs-to-be-bit-more-positive-against-spinners/20260421.htm
+        - img "'Tilak needs to be bit more positive against spinners'" [ref=e708]
+      - heading "'Tilak needs to be bit more positive against spinners'" [level=2] [ref=e709]:
+        - link "'Tilak needs to be bit more positive against spinners'" [ref=e710] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-needs-to-be-bit-more-positive-against-spinners/20260421.htm
+      - paragraph [ref=e711]: 4 min read
+    - generic [ref=e712]:
+      - generic [ref=e713]:
+        - 'link "IPL 2026 Week 3: KKR Break Duck; PBKS Unstoppable" [ref=e715] [cursor=pointer]':
+          - /url: https://www.rediff.com/cricket/special/ipl-2026-week-3-review-kolkata-knight-riders-break-duck-punjab-kings-unstoppable/20260421.htm
+          - 'img "IPL 2026 Week 3: KKR Break Duck; PBKS Unstoppable" [ref=e716]'
+        - generic [ref=e717]:
+          - 'heading "IPL 2026 Week 3: KKR Break Duck; PBKS Unstoppable" [level=3] [ref=e718]':
+            - 'link "IPL 2026 Week 3: KKR Break Duck; PBKS Unstoppable" [ref=e719] [cursor=pointer]':
+              - /url: https://www.rediff.com/cricket/special/ipl-2026-week-3-review-kolkata-knight-riders-break-duck-punjab-kings-unstoppable/20260421.htm
+          - generic [ref=e720]:
+            - paragraph [ref=e721]: 14 min read
+            - paragraph [ref=e722]: 9 hours ago
+      - generic [ref=e723]:
+        - link "Adaptation Key as Tilak Varma Fires MI to Big Win" [ref=e725] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-varma-credits-adaptability-for-match-winning-century/20260421.htm
+          - img "Adaptation Key as Tilak Varma Fires MI to Big Win" [ref=e726]
+        - generic [ref=e727]:
+          - heading "Adaptation Key as Tilak Varma Fires MI to Big Win" [level=3] [ref=e728]:
+            - link "Adaptation Key as Tilak Varma Fires MI to Big Win" [ref=e729] [cursor=pointer]:
+              - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-varma-credits-adaptability-for-match-winning-century/20260421.htm
+          - generic [ref=e730]:
+            - paragraph [ref=e731]: 4 min read
+            - paragraph [ref=e732]: 4 hours ago
+    - generic [ref=e733]:
+      - generic [ref=e734]:
+        - heading "SRH Look to Extend Home Momentum Against Inconsistent DC" [level=3] [ref=e735]:
+          - link "SRH Look to Extend Home Momentum Against Inconsistent DC" [ref=e736] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-preview-srh-look-to-extend-home-momentum-against-inconsistent-dc/20260420.htm
+        - paragraph [ref=e737]: 4 min read
+      - generic [ref=e738]:
+        - heading "Tilak Varma Reflects on Maiden IPL Ton After MI Win" [level=3] [ref=e739]:
+          - link "Tilak Varma Reflects on Maiden IPL Ton After MI Win" [ref=e740] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-tilak-varma-reflects-on-maiden-ipl-ton-after-powering-mumbai-indians-win/20260421.htm
+        - paragraph [ref=e741]: 4 min read
+      - generic [ref=e742]:
+        - heading "From Oct 1, Even Smallest Misstep Can Cost A Wicket" [level=3] [ref=e743]:
+          - link "From Oct 1, Even Smallest Misstep Can Cost A Wicket" [ref=e744] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/from-october-1-even-smallest-misstep-can-cost-a-wicket/20260421.htm
+        - paragraph [ref=e745]: 5 min read
+      - generic [ref=e746]:
+        - heading "Matthew Hayden Slams GT's 'Horror' Show After Loss to MI" [level=3] [ref=e747]:
+          - link "Matthew Hayden Slams GT's 'Horror' Show After Loss to MI" [ref=e748] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-matthew-hayden-slams-gts-horror-show-after-99-run-loss-to-mi/20260421.htm
+        - paragraph [ref=e749]: 6 min read
+      - generic [ref=e750]:
+        - heading "'T20 is about impact rather than consistency'" [level=3] [ref=e751]:
+          - link "'T20 is about impact rather than consistency'" [ref=e752] [cursor=pointer]:
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-axar-patel-declared-fit-ahead-of-srh-clash/20260420.htm
+        - paragraph [ref=e753]: 4 min read
+      - paragraph [ref=e754]:
+        - link "See More >" [ref=e755] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket
+  - heading "CRICKET & SPORTS" [level=2] [ref=e756]:
+    - link "CRICKET & SPORTS" [ref=e758] [cursor=pointer]:
+      - /url: https://www.rediff.com/sports
+  - generic [ref=e759]:
+    - generic [ref=e760]:
+      - link "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e762] [cursor=pointer]:
+        - /url: https://www.rediff.com/sports/report/carlos-alcaraz-aryna-sabalenka-win-top-laureus-honours-comaneci-yamal-pix/20260421.htm
+        - img "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e763]
+      - heading "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [level=2] [ref=e764]:
+        - link "Carlos Alcaraz, Aryna Sabalenka Win Top Laureus Honours" [ref=e765] [cursor=pointer]:
+          - /url: https://www.rediff.com/sports/report/carlos-alcaraz-aryna-sabalenka-win-top-laureus-honours-comaneci-yamal-pix/20260421.htm
+      - paragraph [ref=e766]: 3 min read
+    - generic [ref=e767]:
+      - generic [ref=e768]:
+        - 'link "EPL: West Ham drop crucial points; Wolves relegated" [ref=e770] [cursor=pointer]':
+          - /url: https://www.rediff.com/sports/report/epl-west-ham-drop-crucial-points-wolves-relegated/20260421.htm
+          - 'img "EPL: West Ham drop crucial points; Wolves relegated" [ref=e771]'
+        - generic [ref=e772]:
+          - 'heading "EPL: West Ham drop crucial points; Wolves relegated" [level=3] [ref=e773]':
+            - 'link "EPL: West Ham drop crucial points; Wolves relegated" [ref=e774] [cursor=pointer]':
+              - /url: https://www.rediff.com/sports/report/epl-west-ham-drop-crucial-points-wolves-relegated/20260421.htm
+          - generic [ref=e775]:
+            - paragraph [ref=e776]: 4 min read
+            - paragraph [ref=e777]: 8 hours ago
+      - generic [ref=e778]:
+        - link "Rajasthan Royals Seek Revival Against Lucknow Super Giants" [ref=e780] [cursor=pointer]:
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-preview-rajasthan-royals-seek-revival-against-lucknow-super-giants/20260421.htm
+          - img "Rajasthan Royals Seek Revival Against Lucknow Super Giants" [ref=e781]
+        - generic [ref=e782]:
+          - heading "Rajasthan Royals Seek Revival Against Lucknow Super Giants" [level=3] [ref=e783]:
+            - link "Rajasthan Royals Seek Revival Against Lucknow Super Giants" [ref=e784] [cursor=pointer]:
+              - /url: https://www.rediff.com/cricket/report/ipl-2026-preview-rajasthan-royals-seek-revival-against-lucknow-super-giants/20260421.htm
+          - generic [ref=e785]:
+            - paragraph [ref=e786]: 5 min read
+            - paragraph [ref=e787]: 1 hour ago
+    - generic [ref=e788]:
+      - generic [ref=e789]:
+        - heading "Al-Ahli rally to storm into Asian Champions League final" [level=3] [ref=e790]:
+          - link "Al-Ahli rally to storm into Asian Champions League final" [ref=e791] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/al-ahli-rally-to-storm-into-asian-champions-league-final/20260421.htm
+        - paragraph [ref=e792]: 3 min read
+      - generic [ref=e793]:
+        - heading "Sony To Broadcast Asian Games Aichi-Nagoya 2026" [level=3] [ref=e794]:
+          - link "Sony To Broadcast Asian Games Aichi-Nagoya 2026" [ref=e795] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/sony-secures-asian-games-broadcast-rights/20260421.htm
+        - paragraph [ref=e796]: 2 min read
+      - generic [ref=e797]:
+        - heading "India U-17 Football Team To Face Qatar In Friendlies" [level=3] [ref=e798]:
+          - link "India U-17 Football Team To Face Qatar In Friendlies" [ref=e799] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/india-u17-to-play-friendlies-against-qatar-in-doha/20260420.htm
+        - paragraph [ref=e800]: 2 min read
+      - generic [ref=e801]:
+        - heading "Hockey India Announces Squad For National Coaching Camp" [level=3] [ref=e802]:
+          - link "Hockey India Announces Squad For National Coaching Camp" [ref=e803] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/hockey-india-announces-coaching-camp-for-senior-men/20260420.htm
+        - paragraph [ref=e804]: 3 min read
+      - generic [ref=e805]:
+        - heading "Arteta Stays Defiant as Arsenal Title Fight 'Starts Again'" [level=3] [ref=e806]:
+          - link "Arteta Stays Defiant as Arsenal Title Fight 'Starts Again'" [ref=e807] [cursor=pointer]:
+            - /url: https://www.rediff.com/sports/report/epl-arteta-stays-defiant-as-arsenal-title-fight-starts-again/20260420.htm
+        - paragraph [ref=e808]: 3 min read
+      - paragraph [ref=e809]:
+        - link "See More >" [ref=e810] [cursor=pointer]:
+          - /url: https://www.rediff.com/sports
+  - heading "MOVIES" [level=2] [ref=e811]:
+    - link "MOVIES" [ref=e813] [cursor=pointer]:
+      - /url: https://www.rediff.com/movies
+  - generic [ref=e814]:
+    - generic [ref=e815]:
+      - link "Where Are Celebs Holidaying This Summer?" [ref=e817] [cursor=pointer]:
+        - /url: https://www.rediff.com/movies/report/where-are-celebs-holidaying-this-summer/20260420.htm
+        - img "Where Are Celebs Holidaying This Summer?" [ref=e818]
+      - heading "Where Are Celebs Holidaying This Summer?" [level=2] [ref=e819]:
+        - link "Where Are Celebs Holidaying This Summer?" [ref=e820] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/where-are-celebs-holidaying-this-summer/20260420.htm
+      - paragraph [ref=e821]: 2 min read
+    - generic [ref=e822]:
+      - generic [ref=e823]:
+        - link "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e825] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/watch-when-riteish-genelia-cried-at-raja-shivaji-trailer/20260421.htm
+          - img "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e826]
+        - generic [ref=e827]:
+          - heading "When Riteish-Genelia Cried At Raja Shivaji Trailer" [level=3] [ref=e828]:
+            - link "When Riteish-Genelia Cried At Raja Shivaji Trailer" [ref=e829] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/report/watch-when-riteish-genelia-cried-at-raja-shivaji-trailer/20260421.htm
+          - generic [ref=e830]:
+            - paragraph [ref=e831]: 6 min read
+            - paragraph [ref=e832]: 10 hours ago
+      - generic [ref=e833]:
+        - link "Mrunal Thakur On Being Compared To Madhubala..." [ref=e835] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/mrunal-thakur-on-being-compared-to-madhubala/20260420.htm
+          - img "Mrunal Thakur On Being Compared To Madhubala..." [ref=e836]
+        - generic [ref=e837]:
+          - heading "Mrunal Thakur On Being Compared To Madhubala..." [level=3] [ref=e838]:
+            - link "Mrunal Thakur On Being Compared To Madhubala..." [ref=e839] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/report/mrunal-thakur-on-being-compared-to-madhubala/20260420.htm
+          - generic [ref=e840]:
+            - paragraph [ref=e841]: 4 min read
+            - paragraph [ref=e842]: 1 day ago
+    - generic [ref=e843]:
+      - generic [ref=e844]:
+        - 'heading "Asha Bhosle: The Voice That Had No Expiry Date" [level=3] [ref=e845]':
+          - 'link "Asha Bhosle: The Voice That Had No Expiry Date" [ref=e846] [cursor=pointer]':
+            - /url: https://www.rediff.com/movies/special/asha-bhosle-the-voice-that-had-no-expiry-date/20260416.htm
+        - paragraph [ref=e847]: 7 min read
+      - generic [ref=e848]:
+        - heading "Bhooth Bangla Review" [level=3] [ref=e849]:
+          - link "Bhooth Bangla Review" [ref=e850] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/review/bhooth-bangla-movie-review-miscast-akshay-kumar-in-woeful-priyadarshan-horror-comedy/20260417.htm
+        - paragraph [ref=e851]: 7 min read
+      - generic [ref=e852]:
+        - heading "Alia Bhatt's Sister Shaheen Gets Engaged" [level=3] [ref=e853]:
+          - link "Alia Bhatt's Sister Shaheen Gets Engaged" [ref=e854] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/alia-bhatt-sister-shaheen-gets-engaged-to-ishaan-mehra/20260417.htm
+        - paragraph [ref=e855]: 2 min read
+      - generic [ref=e856]:
+        - 'heading "Asha Bhosle: ''Some Songs Have Been A Challenge''" [level=3] [ref=e857]':
+          - 'link "Asha Bhosle: ''Some Songs Have Been A Challenge''" [ref=e858] [cursor=pointer]':
+            - /url: https://www.rediff.com/movies/report/asha-bhosle-ive-sung-many-songs-but-some-songs-have-been-a-challenge/20260416.htm
+        - paragraph [ref=e859]: 9 min read
+      - generic [ref=e860]:
+        - heading "10 Films That Leaked Online Before Release" [level=3] [ref=e861]:
+          - link "10 Films That Leaked Online Before Release" [ref=e862] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/10-films-that-leaked-online-before-release/20260416.htm
+        - paragraph [ref=e863]: 9 min read
+      - paragraph [ref=e864]:
+        - link "See More >" [ref=e865] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies
+  - generic [ref=e866]:
+    - generic [ref=e867]: Advertisement
+    - generic:
+      - insertion
+  - heading "GET AHEAD" [level=2] [ref=e868]:
+    - link "GET AHEAD" [ref=e870] [cursor=pointer]:
+      - /url: https://www.rediff.com/getahead
+  - generic [ref=e871]:
+    - generic [ref=e872]:
+      - link "Style Tips For The True-Blue Taurus" [ref=e874] [cursor=pointer]:
+        - /url: https://www.rediff.com/getahead/report/style-tips-for-the-true-blue-taurus/20260420.htm
+        - img "Style Tips For The True-Blue Taurus" [ref=e875]
+      - heading "Style Tips For The True-Blue Taurus" [level=2] [ref=e876]:
+        - link "Style Tips For The True-Blue Taurus" [ref=e877] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/style-tips-for-the-true-blue-taurus/20260420.htm
+      - paragraph [ref=e878]: 2 min read
+    - generic [ref=e879]:
+      - generic [ref=e880]:
+        - link "Vidhi Will Keep You Guessing" [ref=e882] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/vidhi-yadav-will-keep-you-guessing-bad-boy-karthik/20260420.htm
+          - img "Vidhi Will Keep You Guessing" [ref=e883]
+        - generic [ref=e884]:
+          - heading "Vidhi Will Keep You Guessing" [level=3] [ref=e885]:
+            - link "Vidhi Will Keep You Guessing" [ref=e886] [cursor=pointer]:
+              - /url: https://www.rediff.com/getahead/report/vidhi-yadav-will-keep-you-guessing-bad-boy-karthik/20260420.htm
+          - generic [ref=e887]:
+            - paragraph [ref=e888]: 2 min read
+            - paragraph [ref=e889]: 1 day ago
+      - generic [ref=e890]:
+        - link "Discovering The Rhythm Of Bhutan" [ref=e892] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/discovering-the-rhythm-of-bhutan/20260421.htm
+          - img "Discovering The Rhythm Of Bhutan" [ref=e893]
+        - generic [ref=e894]:
+          - heading "Discovering The Rhythm Of Bhutan" [level=3] [ref=e895]:
+            - link "Discovering The Rhythm Of Bhutan" [ref=e896] [cursor=pointer]:
+              - /url: https://www.rediff.com/getahead/report/discovering-the-rhythm-of-bhutan/20260421.htm
+          - generic [ref=e897]:
+            - paragraph [ref=e898]: 3 min read
+            - paragraph [ref=e899]: 7 hours ago
+    - generic [ref=e900]:
+      - generic [ref=e901]:
+        - heading "Love Sports? Top 8 Careers For You" [level=3] [ref=e902]:
+          - link "Love Sports? Top 8 Careers For You" [ref=e903] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/eight-high-growth-careers-if-you-love-sports/20260421.htm
+        - paragraph [ref=e904]: 7 min read
+      - generic [ref=e905]:
+        - 'heading "Recipe: Danny''s Egg Neer Dosas" [level=3] [ref=e906]':
+          - 'link "Recipe: Danny''s Egg Neer Dosas" [ref=e907] [cursor=pointer]':
+            - /url: https://www.rediff.com/getahead/report/recipe-dannys-egg-neer-dosas/20260421.htm
+        - paragraph [ref=e908]: 2 min read
+      - generic [ref=e909]:
+        - heading "Goa's Sadhvi Sail Crowned Femina Miss India World" [level=3] [ref=e910]:
+          - link "Goa's Sadhvi Sail Crowned Femina Miss India World" [ref=e911] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/goas-sadhvi-sail-crowned-femina-miss-india-world/20260420.htm
+        - paragraph [ref=e912]: 4 min read
+      - generic [ref=e913]:
+        - heading "Tired of Paneer? 10 Veg Sources Of Protein" [level=3] [ref=e914]:
+          - link "Tired of Paneer? 10 Veg Sources Of Protein" [ref=e915] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/tired-of-paneer--10-veg-sources-of-protein/20260420.htm
+        - paragraph [ref=e916]: 6 min read
+      - generic [ref=e917]:
+        - heading "Why Long-Duration Funds Are Losing Money" [level=3] [ref=e918]:
+          - link "Why Long-Duration Funds Are Losing Money" [ref=e919] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/why-long-duration-funds-are-losing-money/20260421.htm
+        - paragraph [ref=e920]: 5 min read
+      - paragraph [ref=e921]:
+        - link "See More >" [ref=e922] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead
+  - heading "BUSINESS" [level=2] [ref=e923]:
+    - link "BUSINESS" [ref=e925] [cursor=pointer]:
+      - /url: https://www.rediff.com/business
+  - generic [ref=e926]:
+    - generic [ref=e927]:
+      - link "VinFast VF 7 MPV comes with free buyback, free charging" [ref=e929] [cursor=pointer]:
+        - /url: https://www.rediff.com/business/report/auto-vinfast-vf-7-mpv-comes-with-free-buyback-free-charging/20260420.htm
+        - img "VinFast VF 7 MPV comes with free buyback, free charging" [ref=e930]
+      - heading "VinFast VF 7 MPV comes with free buyback, free charging" [level=2] [ref=e931]:
+        - link "VinFast VF 7 MPV comes with free buyback, free charging" [ref=e932] [cursor=pointer]:
+          - /url: https://www.rediff.com/business/report/auto-vinfast-vf-7-mpv-comes-with-free-buyback-free-charging/20260420.htm
+      - paragraph [ref=e933]: 3 min read
+    - generic [ref=e934]:
+      - generic [ref=e935]:
+        - link "Renault gets 'FutuREady', to launch 7 new cars by 2030" [ref=e937] [cursor=pointer]:
+          - /url: https://www.rediff.com/business/report/auto-renault-gets-futuready-to-launch-7-new-cars-by-2030/20260417.htm
+          - img "Renault gets 'FutuREady', to launch 7 new cars by 2030" [ref=e938]
+        - generic [ref=e939]:
+          - heading "Renault gets 'FutuREady', to launch 7 new cars by 2030" [level=3] [ref=e940]:
+            - link "Renault gets 'FutuREady', to launch 7 new cars by 2030" [ref=e941] [cursor=pointer]:
+              - /url: https://www.rediff.com/business/report/auto-renault-gets-futuready-to-launch-7-new-cars-by-2030/20260417.htm
+          - generic [ref=e942]:
+            - paragraph [ref=e943]: 4 min read
+            - paragraph [ref=e944]: 4 days ago
+      - generic [ref=e945]:
+        - 'link "Gulf War: Stocks That Could Buck The Trend And Shine" [ref=e947] [cursor=pointer]':
+          - /url: https://www.rediff.com/business/report/gulf-war-stocks-that-could-buck-the-trend/20260414.htm
+          - 'img "Gulf War: Stocks That Could Buck The Trend And Shine" [ref=e948]'
+        - generic [ref=e949]:
+          - 'heading "Gulf War: Stocks That Could Buck The Trend And Shine" [level=3] [ref=e950]':
+            - 'link "Gulf War: Stocks That Could Buck The Trend And Shine" [ref=e951] [cursor=pointer]':
+              - /url: https://www.rediff.com/business/report/gulf-war-stocks-that-could-buck-the-trend/20260414.htm
+          - generic [ref=e952]:
+            - paragraph [ref=e953]: 11 min read
+            - paragraph [ref=e954]: 1 week ago
+    - generic [ref=e955]:
+      - generic [ref=e956]:
+        - heading "Wage Hike Fails To Solve Worker Woes" [level=3] [ref=e957]:
+          - link "Wage Hike Fails To Solve Worker Woes" [ref=e958] [cursor=pointer]:
+            - /url: https://www.rediff.com/business/report/wage-hike-fails-to-solve-worker-woes/20260420.htm
+        - paragraph [ref=e959]: 5 min read
+      - generic [ref=e960]:
+        - heading "Industrial credit growth may clock 9-13% in H1CY26" [level=3] [ref=e961]:
+          - link "Industrial credit growth may clock 9-13% in H1CY26" [ref=e962] [cursor=pointer]:
+            - /url: https://www.rediff.com/business/report/industrial-credit-growth-may-clock-9-13-in-h1cy26/20260420.htm
+        - paragraph [ref=e963]: 4 min read
+      - generic [ref=e964]:
+        - 'heading "Mixed-use projects: The new frontier for Indian real estate developers" [level=3] [ref=e965]':
+          - 'link "Mixed-use projects: The new frontier for Indian real estate developers" [ref=e966] [cursor=pointer]':
+            - /url: https://www.rediff.com/business/report/mixed-use-real-estate-projects-driving-returns--urban-development-in-india/20260420.htm
+        - paragraph [ref=e967]: 4 min read
+      - generic [ref=e968]:
+        - heading "Air India plans to complete B787-8 retrofit by Q1 2028" [level=3] [ref=e969]:
+          - link "Air India plans to complete B787-8 retrofit by Q1 2028" [ref=e970] [cursor=pointer]:
+            - /url: https://www.rediff.com/business/report/air-india-plans-to-complete-b787-8-retrofit-by-q1-2028/20260420.htm
+        - paragraph [ref=e971]: 2 min read
+      - generic [ref=e972]:
+        - heading "HDFC Bank moderates FY27 growth outlook, targets 12% Y-o-Y" [level=3] [ref=e973]:
+          - link "HDFC Bank moderates FY27 growth outlook, targets 12% Y-o-Y" [ref=e974] [cursor=pointer]:
+            - /url: https://www.rediff.com/business/report/hdfc-bank-moderates-fy27-growth-outlook-targets-12-y-o-y/20260420.htm
+        - paragraph [ref=e975]: 5 min read
+      - paragraph [ref=e976]:
+        - link "See More >" [ref=e977] [cursor=pointer]:
+          - /url: https://www.rediff.com/business
+  - heading "EDITOR'S CHOICE" [level=2] [ref=e978]: EDITOR'S CHOICE
+  - generic [ref=e980]:
+    - generic [ref=e981]:
+      - link "7 Beautiful Daddy Songs" [ref=e983] [cursor=pointer]:
+        - /url: https://www.rediff.com/movies/slide-show/slide-show-1-7-beautiful-daddy-songs/20250616.htm
+        - img "7 Beautiful Daddy Songs" [ref=e984]
+      - heading "7 Beautiful Daddy Songs" [level=2] [ref=e985]:
+        - link "7 Beautiful Daddy Songs" [ref=e986] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/slide-show/slide-show-1-7-beautiful-daddy-songs/20250616.htm
+    - generic [ref=e987]:
+      - generic [ref=e988]:
+        - link "7 Celebs And Their Lookalike Siblings" [ref=e990] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/7-celebs-and-their-lookalike-siblings/20250617.htm
+          - img "7 Celebs And Their Lookalike Siblings" [ref=e991]
+        - generic [ref=e992]:
+          - heading "7 Celebs And Their Lookalike Siblings" [level=3] [ref=e993]:
+            - link "7 Celebs And Their Lookalike Siblings" [ref=e994] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/report/7-celebs-and-their-lookalike-siblings/20250617.htm
+          - generic [ref=e995]:
+            - paragraph [ref=e996]: 2 min read
+            - paragraph [ref=e997]: 11 months ago
+      - generic [ref=e998]:
+        - link "Top 10 Mithun Songs" [ref=e1000] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/slide-show/slide-show-1-top-10-mithun-songs/20250617.htm
+          - img "Top 10 Mithun Songs" [ref=e1001]
+        - generic [ref=e1002]:
+          - heading "Top 10 Mithun Songs" [level=3] [ref=e1003]:
+            - link "Top 10 Mithun Songs" [ref=e1004] [cursor=pointer]:
+              - /url: https://www.rediff.com/movies/slide-show/slide-show-1-top-10-mithun-songs/20250617.htm
+          - generic [ref=e1005]:
+            - paragraph [ref=e1006]: 2 min read
+            - paragraph [ref=e1007]: 11 months ago
+    - generic [ref=e1008]:
+      - generic [ref=e1009]:
+        - heading "'Many Women Don't Have Guts To Escape'" [level=3] [ref=e1010]:
+          - link "'Many Women Don't Have Guts To Escape'" [ref=e1011] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/many-women-dont-have-guts-to-escape-their-situation/20250618.htm
+        - paragraph [ref=e1012]: 11 min read
+      - generic [ref=e1013]:
+        - heading "Can Dehydration Cause Muscle Cramps?" [level=3] [ref=e1014]:
+          - link "Can Dehydration Cause Muscle Cramps?" [ref=e1015] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/can-dehydration-cause-muscle-cramps/20250618.htm
+        - paragraph [ref=e1016]: 5 min read
+      - generic [ref=e1017]:
+        - 'heading "Liver Cancer: Don''t Ignore Stomach Pain" [level=3] [ref=e1018]':
+          - 'link "Liver Cancer: Don''t Ignore Stomach Pain" [ref=e1019] [cursor=pointer]':
+            - /url: https://www.rediff.com/getahead/report/liver-cancer-dont-ignore-stomach-pain/20250617.htm
+        - paragraph [ref=e1020]: 5 min read
+      - generic [ref=e1021]:
+        - heading "10 Of Bombay's Oldest Restaurants" [level=3] [ref=e1022]:
+          - link "10 Of Bombay's Oldest Restaurants" [ref=e1023] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/slide-show/slide-show-1-10-of-bombays-oldest-restaurants/20250617.htm
+        - paragraph [ref=e1024]: 5 min read
+      - generic [ref=e1025]:
+        - heading "Why You May Get An I-T Notice" [level=3] [ref=e1026]:
+          - link "Why You May Get An I-T Notice" [ref=e1027] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/why-you-may-get-an-income-tax-notice/20250617.htm
+        - paragraph [ref=e1028]: 6 min read
+  - generic [ref=e1030]:
+    - generic [ref=e1031]:
+      - heading "MARKET NEWS" [level=2] [ref=e1032]:
+        - link "MARKET NEWS" [ref=e1033] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/share-market-news
+          - text: MARKET NEWS
+      - generic [ref=e1035]:
+        - 'link "John Ternus to be Apple CEO: A New Era Begins" [ref=e1037] [cursor=pointer]':
+          - /url: https://money.rediff.com/news/market/john-ternus-to-be-apple-ceo-a-new-era-begins/45676020260421
+          - 'img "John Ternus to be Apple CEO: A New Era Begins" [ref=e1038]'
+        - 'heading "John Ternus to be Apple CEO: A New Era Begins" [level=3] [ref=e1039]':
+          - 'link "John Ternus to be Apple CEO: A New Era Begins" [ref=e1040] [cursor=pointer]':
+            - /url: https://money.rediff.com/news/market/john-ternus-to-be-apple-ceo-a-new-era-begins/45676020260421
+        - paragraph
+    - generic [ref=e1041]:
+      - generic [ref=e1042]:
+        - link "Rupee Plunges to 93.48 Against US Dollar" [ref=e1044] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/rupee-plunges-to-93-48-against-us-dollar/45674920260421
+          - img "Rupee Plunges to 93.48 Against US Dollar" [ref=e1045]
+        - link "Rupee Plunges to 93.48 Against US Dollar" [ref=e1047] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/rupee-plunges-to-93-48-against-us-dollar/45674920260421
+      - generic [ref=e1048]:
+        - link "Krafton, Naver Launch Rs 6,000 Cr India Unicorn Fund" [ref=e1050] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/krafton-naver-launch-rs-6-000-cr-india-unicorn-fund/45674620260421
+          - img "Krafton, Naver Launch Rs 6,000 Cr India Unicorn Fund" [ref=e1051]
+        - link "Krafton, Naver Launch Rs 6,000 Cr India Unicorn Fund" [ref=e1053] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/krafton-naver-launch-rs-6-000-cr-india-unicorn-fund/45674620260421
+      - generic [ref=e1054]:
+        - link "ICICI Prudential Pays Sebi Rs 14.35 Lakh" [ref=e1056] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/icici-prudential-pays-sebi-rs-14-35-lakh/45674220260421
+          - img "ICICI Prudential Pays Sebi Rs 14.35 Lakh" [ref=e1057]
+        - link "ICICI Prudential Pays Sebi Rs 14.35 Lakh" [ref=e1059] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/market/icici-prudential-pays-sebi-rs-14-35-lakh/45674220260421
+      - paragraph [ref=e1060]:
+        - link "See More >" [ref=e1061] [cursor=pointer]:
+          - /url: https://money.rediff.com/news/share-market-news
+  - generic [ref=e1065]:
+    - heading "STORIES YOU MAY HAVE MISSED" [level=2] [ref=e1066]
+    - generic [ref=e1067]:
+      - generic [ref=e1068]:
+        - 'link "Jain Recipes: Kele Appe, Pav Bhaji, Mango Sevaiya Custard" [ref=e1070] [cursor=pointer]':
+          - /url: https://www.rediff.com/getahead/report/jain-recipes-kele-appe-pav-bhaji-mango-sevaiya-custard/20260331.htm
+          - 'img "Jain Recipes: Kele Appe, Pav Bhaji, Mango Sevaiya Custard" [ref=e1071]'
+        - 'heading "Jain Recipes: Kele Appe, Pav Bhaji, Mango Sevaiya Custard" [level=3] [ref=e1072]':
+          - 'link "Jain Recipes: Kele Appe, Pav Bhaji, Mango Sevaiya Custard" [ref=e1073] [cursor=pointer]':
+            - /url: https://www.rediff.com/getahead/report/jain-recipes-kele-appe-pav-bhaji-mango-sevaiya-custard/20260331.htm
+        - paragraph [ref=e1074]: 5 min read
+      - generic [ref=e1075]:
+        - link "'What? There are Jews in Iran?!'" [ref=e1077] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/special/what-there-are-jews-in-iran/20260401.htm
+          - img "'What? There are Jews in Iran?!'" [ref=e1078]
+        - heading "'What? There are Jews in Iran?!'" [level=3] [ref=e1079]:
+          - link "'What? There are Jews in Iran?!'" [ref=e1080] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/special/what-there-are-jews-in-iran/20260401.htm
+        - paragraph [ref=e1081]: 6 min read
+      - generic [ref=e1082]:
+        - link "The 25-Year SIP Strategy To Retire At 50" [ref=e1084] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/the-25-year-sip-strategy-to-retire-at-50/20260330.htm
+          - img "The 25-Year SIP Strategy To Retire At 50" [ref=e1085]
+        - heading "The 25-Year SIP Strategy To Retire At 50" [level=3] [ref=e1086]:
+          - link "The 25-Year SIP Strategy To Retire At 50" [ref=e1087] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/the-25-year-sip-strategy-to-retire-at-50/20260330.htm
+        - paragraph [ref=e1088]: 6 min read
+      - generic [ref=e1089]:
+        - link "7 Foods To Boost Your Daily Iodine Intake" [ref=e1091] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/seven-foods-to-boost-your-daily-iodine-intake/20260330.htm
+          - img "7 Foods To Boost Your Daily Iodine Intake" [ref=e1092]
+        - heading "7 Foods To Boost Your Daily Iodine Intake" [level=3] [ref=e1093]:
+          - link "7 Foods To Boost Your Daily Iodine Intake" [ref=e1094] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/seven-foods-to-boost-your-daily-iodine-intake/20260330.htm
+        - paragraph [ref=e1095]: 3 min read
+      - generic [ref=e1096]:
+        - link "The Quiz You Absolutely Must Take" [ref=e1098] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/the-april-1-quiz-you-absolutely-must-take/20260401.htm
+          - img "The Quiz You Absolutely Must Take" [ref=e1099]
+        - heading "The Quiz You Absolutely Must Take" [level=3] [ref=e1100]:
+          - link "The Quiz You Absolutely Must Take" [ref=e1101] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/the-april-1-quiz-you-absolutely-must-take/20260401.htm
+        - paragraph [ref=e1102]: 1 min read
+      - generic [ref=e1103]:
+        - link "10 Reasons Why Akshaye Khanna Is So Appealing" [ref=e1105] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/special/10-reasons-why-akshaye-khanna-is-so-appealing/20260330.htm
+          - img "10 Reasons Why Akshaye Khanna Is So Appealing" [ref=e1106]
+        - heading "10 Reasons Why Akshaye Khanna Is So Appealing" [level=3] [ref=e1107]:
+          - link "10 Reasons Why Akshaye Khanna Is So Appealing" [ref=e1108] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/special/10-reasons-why-akshaye-khanna-is-so-appealing/20260330.htm
+        - paragraph [ref=e1109]: 7 min read
+      - generic [ref=e1110]:
+        - link "Bad Day? Let Your Outfit's Colour Change Your Mood" [ref=e1112] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/facing-a-bad-day-let-your-outfits-colour-change-your-mood/20260331.htm
+          - img "Bad Day? Let Your Outfit's Colour Change Your Mood" [ref=e1113]
+        - heading "Bad Day? Let Your Outfit's Colour Change Your Mood" [level=3] [ref=e1114]:
+          - link "Bad Day? Let Your Outfit's Colour Change Your Mood" [ref=e1115] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/facing-a-bad-day-let-your-outfits-colour-change-your-mood/20260331.htm
+        - paragraph [ref=e1116]: 2 min read
+      - generic [ref=e1117]:
+        - link "What Are The Best Yoga Asanas For Thyroid?" [ref=e1119] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/what-are-the-best-yoga-asanas-for-thyroid/20260330.htm
+          - img "What Are The Best Yoga Asanas For Thyroid?" [ref=e1120]
+        - heading "What Are The Best Yoga Asanas For Thyroid?" [level=3] [ref=e1121]:
+          - link "What Are The Best Yoga Asanas For Thyroid?" [ref=e1122] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/what-are-the-best-yoga-asanas-for-thyroid/20260330.htm
+        - paragraph [ref=e1123]: 6 min read
+      - generic [ref=e1124]:
+        - link "Why My Last Minute Concert Plan Was Totally Worth It" [ref=e1126] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/why-my-last-minute-concert-plan-was-totally-worth-it/20260331.htm
+          - img "Why My Last Minute Concert Plan Was Totally Worth It" [ref=e1127]
+        - heading "Why My Last Minute Concert Plan Was Totally Worth It" [level=3] [ref=e1128]:
+          - link "Why My Last Minute Concert Plan Was Totally Worth It" [ref=e1129] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/why-my-last-minute-concert-plan-was-totally-worth-it/20260331.htm
+        - paragraph [ref=e1130]: 5 min read
+      - generic [ref=e1131]:
+        - link "'Indian Weddings Have Deep Meaning'" [ref=e1133] [cursor=pointer]:
+          - /url: https://www.rediff.com/getahead/report/indian-weddings-have-deep-meaning-behind-every-ritual/20260331.htm
+          - img "'Indian Weddings Have Deep Meaning'" [ref=e1134]
+        - heading "'Indian Weddings Have Deep Meaning'" [level=3] [ref=e1135]:
+          - link "'Indian Weddings Have Deep Meaning'" [ref=e1136] [cursor=pointer]:
+            - /url: https://www.rediff.com/getahead/report/indian-weddings-have-deep-meaning-behind-every-ritual/20260331.htm
+        - paragraph [ref=e1137]: 5 min read
+  - generic [ref=e1138]:
+    - heading "THE TIMELESS 100" [level=2] [ref=e1139]:
+      - link "THE TIMELESS 100" [ref=e1140] [cursor=pointer]:
+        - /url: https://www.rediff.com/topstories
+    - generic [ref=e1141]:
+      - generic [ref=e1142]:
+        - link "'I Would Like To Do My Gareeb Films'" [ref=e1144] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/sarmad-sultan-khoosat-i-would-like-to-do-my-gareeb-films/20260320.htm
+          - img "'I Would Like To Do My Gareeb Films'" [ref=e1145]
+        - heading "'I Would Like To Do My Gareeb Films'" [level=3] [ref=e1146]:
+          - link "'I Would Like To Do My Gareeb Films'" [ref=e1147] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/sarmad-sultan-khoosat-i-would-like-to-do-my-gareeb-films/20260320.htm
+        - paragraph [ref=e1148]: 13 min read
+      - generic [ref=e1149]:
+        - link "Tighee Review" [ref=e1151] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/review/tighee-review/20260321.htm
+          - img "Tighee Review" [ref=e1152]
+        - heading "Tighee Review" [level=3] [ref=e1153]:
+          - link "Tighee Review" [ref=e1154] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/review/tighee-review/20260321.htm
+        - paragraph [ref=e1155]: 5 min read
+      - generic [ref=e1156]:
+        - 'link "''Israel won''t strike Iran'': Trump after Tehran hits Qatar LNG hub" [ref=e1158] [cursor=pointer]':
+          - /url: https://www.rediff.com/news/report/israel-wont-strike-iran-trump-after-tehran-hits-qatar-lng-plant/20260319.htm
+          - 'img "''Israel won''t strike Iran'': Trump after Tehran hits Qatar LNG hub" [ref=e1159]'
+        - 'heading "''Israel won''t strike Iran'': Trump after Tehran hits Qatar LNG hub" [level=3] [ref=e1160]':
+          - 'link "''Israel won''t strike Iran'': Trump after Tehran hits Qatar LNG hub" [ref=e1161] [cursor=pointer]':
+            - /url: https://www.rediff.com/news/report/israel-wont-strike-iran-trump-after-tehran-hits-qatar-lng-plant/20260319.htm
+        - paragraph [ref=e1162]: 4 min read
+      - generic [ref=e1163]:
+        - link "Dhurandhar The Revenge Has Record-Breaking Opening" [ref=e1165] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/report/dhurandhar-the-revenge-has-record-breaking-opening-box-office/20260323.htm
+          - img "Dhurandhar The Revenge Has Record-Breaking Opening" [ref=e1166]
+        - heading "Dhurandhar The Revenge Has Record-Breaking Opening" [level=3] [ref=e1167]:
+          - link "Dhurandhar The Revenge Has Record-Breaking Opening" [ref=e1168] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/report/dhurandhar-the-revenge-has-record-breaking-opening-box-office/20260323.htm
+        - paragraph [ref=e1169]: 2 min read
+      - generic [ref=e1170]:
+        - link "The Dhurandhar 2 Review" [ref=e1172] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/review/ranveer-singh-madhavan-arjun-rampal-starrer-directed-by-aditya-dhar-dhurandhar-the-revenge-review/20260319.htm
+          - img "The Dhurandhar 2 Review" [ref=e1173]
+        - heading "The Dhurandhar 2 Review" [level=3] [ref=e1174]:
+          - link "The Dhurandhar 2 Review" [ref=e1175] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/review/ranveer-singh-madhavan-arjun-rampal-starrer-directed-by-aditya-dhar-dhurandhar-the-revenge-review/20260319.htm
+        - paragraph [ref=e1176]: 7 min read
+      - generic [ref=e1177]:
+        - 'link "Dhurandhar: Storytelling In Age Of Restless Viewers" [ref=e1179] [cursor=pointer]':
+          - /url: https://www.rediff.com/movies/column/dhurandhar-storytelling-in-the-age-of-restless-viewers/20260323.htm
+          - 'img "Dhurandhar: Storytelling In Age Of Restless Viewers" [ref=e1180]'
+        - 'heading "Dhurandhar: Storytelling In Age Of Restless Viewers" [level=3] [ref=e1181]':
+          - 'link "Dhurandhar: Storytelling In Age Of Restless Viewers" [ref=e1182] [cursor=pointer]':
+            - /url: https://www.rediff.com/movies/column/dhurandhar-storytelling-in-the-age-of-restless-viewers/20260323.htm
+        - paragraph [ref=e1183]: 6 min read
+      - generic [ref=e1184]:
+        - link "Why Did Israel Kill Ali Larijani?" [ref=e1186] [cursor=pointer]:
+          - /url: https://www.rediff.com/news/special/why-did-israel-kill-ali-larijani/20260318.htm
+          - img "Why Did Israel Kill Ali Larijani?" [ref=e1187]
+        - heading "Why Did Israel Kill Ali Larijani?" [level=3] [ref=e1188]:
+          - link "Why Did Israel Kill Ali Larijani?" [ref=e1189] [cursor=pointer]:
+            - /url: https://www.rediff.com/news/special/why-did-israel-kill-ali-larijani/20260318.htm
+        - paragraph [ref=e1190]: 15 min read
+      - generic [ref=e1191]:
+        - 'link "Pak may develop missiles capable of hitting US: Gabbard" [ref=e1193] [cursor=pointer]':
+          - /url: https://www.rediff.com/news/report/pak-may-develop-missiles-capable-of-hitting-us-gabbard/20260318.htm
+          - 'img "Pak may develop missiles capable of hitting US: Gabbard" [ref=e1194]'
+        - 'heading "Pak may develop missiles capable of hitting US: Gabbard" [level=3] [ref=e1195]':
+          - 'link "Pak may develop missiles capable of hitting US: Gabbard" [ref=e1196] [cursor=pointer]':
+            - /url: https://www.rediff.com/news/report/pak-may-develop-missiles-capable-of-hitting-us-gabbard/20260318.htm
+        - paragraph [ref=e1197]: 3 min read
+      - generic [ref=e1198]:
+        - link "Chiraiya Review" [ref=e1200] [cursor=pointer]:
+          - /url: https://www.rediff.com/movies/review/chiraiya-review-divya-dutta/20260320.htm
+          - img "Chiraiya Review" [ref=e1201]
+        - heading "Chiraiya Review" [level=3] [ref=e1202]:
+          - link "Chiraiya Review" [ref=e1203] [cursor=pointer]:
+            - /url: https://www.rediff.com/movies/review/chiraiya-review-divya-dutta/20260320.htm
+        - paragraph [ref=e1204]: 5 min read
+      - generic [ref=e1205]:
+        - 'link "New Team, New Life: Arjun Tendulkar 2.0 Begins" [ref=e1207] [cursor=pointer]':
+          - /url: https://www.rediff.com/cricket/report/ipl-2026-new-team-new-life-arjun-tendulkar-20-begins/20260318.htm
+          - 'img "New Team, New Life: Arjun Tendulkar 2.0 Begins" [ref=e1208]'
+        - 'heading "New Team, New Life: Arjun Tendulkar 2.0 Begins" [level=3] [ref=e1209]':
+          - 'link "New Team, New Life: Arjun Tendulkar 2.0 Begins" [ref=e1210] [cursor=pointer]':
+            - /url: https://www.rediff.com/cricket/report/ipl-2026-new-team-new-life-arjun-tendulkar-20-begins/20260318.htm
+        - paragraph [ref=e1211]: 2 min read
+    - link "See More >" [ref=e1212] [cursor=pointer]:
+      - /url: https://www.rediff.com/topstories
+  - generic [ref=e1214]:
+    - generic [ref=e1215]: Advertisement
+    - generic:
+      - insertion
+  - generic [ref=e1216]:
+    - link "Rediffmail for Work" [ref=e1217] [cursor=pointer]:
+      - /url: https://track.rediff.com/click?url=___https://workmail.rediff.com?sc_cid=footer-biz-email___&cmp=host&lnk=footer-biz-email&nsrv1=host
+    - link "Book a domain" [ref=e1218] [cursor=pointer]:
+      - /url: https://track.rediff.com/click?url=___https://businessemail.rediff.com/domain?sc_cid=footer-domain___&cmp=host&lnk=footer-domain&nsrv1=host
+    - link "Rediffmail" [ref=e1219] [cursor=pointer]:
+      - /url: https://mail.rediff.com/cgi-bin/login.cgi
+    - link "Money" [ref=e1220] [cursor=pointer]:
+      - /url: https://money.rediff.com
+    - link "Videos" [ref=e1221] [cursor=pointer]:
+      - /url: https://ishare.rediff.com
+    - link "The Timeless 100" [ref=e1222] [cursor=pointer]:
+      - /url: https://www.rediff.com/topstories
+  - generic [ref=e1223]:
+    - img "rediff on the net" [ref=e1224]
+    - text: © 2026
+    - link "Rediff.com" [ref=e1225] [cursor=pointer]:
+      - /url: https://www.rediff.com/
+    - text: "-"
+    - link "Advertise with us" [ref=e1226] [cursor=pointer]:
+      - /url: https://clients.rediff.com/rediff_advertisewithus/contact.htm
+    - text: "-"
+    - link "Disclaimer" [ref=e1227] [cursor=pointer]:
+      - /url: https://www.rediff.com/disclaim.htm
+    - text: "-"
+    - link "Privacy Policy" [ref=e1228] [cursor=pointer]:
+      - /url: https://www.rediff.com/w3c/policy.html
+    - text: "-"
+    - link "Sitemap" [ref=e1229] [cursor=pointer]:
+      - /url: https://www.rediff.com/sitemap.xml
+    - text: "-"
+    - link "Feedback" [ref=e1230] [cursor=pointer]:
+      - /url: https://mypage.rediff.com/feedback
+    - text: "-"
+    - link "About us" [ref=e1231] [cursor=pointer]:
+      - /url: https://www.rediff.com/aboutus.html
+    - text: "-"
+    - link "Terms of use" [ref=e1232] [cursor=pointer]:
+      - /url: https://www.rediff.com/terms.html
+    - text: "-"
+    - link "Grievances" [ref=e1233] [cursor=pointer]:
+      - /url: https://www.rediff.com/grievances.html
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require('@playwright/test');
+  2  | 
+  3  | //test.describe.configure({mode: 'parallel'}); //if we need to run tests on same file in parallel 
+  4  | //test.describe.configure({mode: 'serial'}); //fails next tests if previous one has failed (needed when tests depend on each other)
+  5  | 
+  6  | test('@Web Popup validations', async ({ page }) => {
+  7  |     //Login 
+  8  |     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+  9  |     //await page.goto("https://google.com/");
+  10 |     //await page.goBack();
+  11 |     //await page.goForward(); 
+  12 |     await expect(page.locator("#displayed-text")).toBeVisible();
+  13 |     await page.locator("#hide-textbox").click();
+  14 |     await expect(page.locator("#displayed-text")).toBeHidden();
+  15 |     await page.locator("#confirmbtn").click();
+  16 |     page.on('dialog', dialog => dialog.accept()); //listener to accept any popup dialogue
+  17 |     await page.locator("#mousehover").hover();
+  18 | 
+  19 |     const framesPage = page.frameLocator("#courses-iframe");
+  20 |     await framesPage.locator("li a[href*='lifetime-access']:visible").click();
+  21 | 
+  22 |     await expect(framesPage.locator(".text h2")).toContainText("13,522");
+  23 |     //or 
+  24 |     const text = await framesPage.locator(".text h2").textContent();
+  25 |     expect(text.split(" ")[1]).toBe("13,522");
+  26 | 
+  27 | 
+  28 | });
+  29 | 
+  30 | 
+  31 | test('Screenshot and Visual comparison', async ({ page }) => {
+  32 |     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
+  33 |     await expect(page.locator("#displayed-text")).toBeVisible();
+  34 |     await page.locator("#displayed-text").screenshot({path: 'partialScreenshot.png'})
+  35 |     await page.locator("#hide-textbox").click();
+  36 |     await page.screenshot({path: 'screenshot.png'})
+  37 |     await expect(page.locator("#displayed-text")).toBeHidden();
+  38 | });
+  39 | 
+  40 | test('Visual comparison', async ({ page }) => {
+> 41 |     await page.goto("https://www.rediff.com");
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  42 |     expect(await page.screenshot()).toMatchSnapshot('landing.png'); //landing.png = existing screenshot 
+  43 | });
+```

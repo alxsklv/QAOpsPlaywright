@@ -1,0 +1,23 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "allTestsWithCucumber": "npx cucumber-js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.4",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.7.1",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.7.0"
+  }
+}
