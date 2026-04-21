@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
 const BASE_URL = "https://eventhub.rahulshettyacademy.com";
-const USERNAME = "Alex";
-const PASSWORD = "Test1"
+const USERNAME = "Alex2";
+const PASSWORD = "Test12"
 const EMAIL = "alex@test.com"
 const fullName = "Test Test"
 const PHONE = "12344556"
